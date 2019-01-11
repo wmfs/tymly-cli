@@ -19,5 +19,10 @@
 $ npm install -g @wmfs/tymly-cli
 ```
 
-## <a name='license'></a>License
-[MIT](https://github.com/wmfs/tymly-cli/blob/master/LICENSE)
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub. Please be aware of our [Code of Conduct](https://github.com/wmfs/tymly-cli/blob/master/CODE_OF_CONDUCT.md)
+
+## <a name="license"></a>License
+Licensed under the terms of the [MIT license](https://github.com/wmfs/tymly-cli/blob/master/LICENSE). Copyright &copy; 2019 West Midlands Fire Service
+
