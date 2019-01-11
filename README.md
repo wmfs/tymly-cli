@@ -1,3 +1,5 @@
+![Tymly Logo](https://github.com/wmfs/tymly-cli/blob/master/assets/tymly_wordmark_and_logo_medium.svg)
+
 # tymly-cli
 🛠 Tooling for Tymly Blueprint Development - https://wmfs.github.io/tymly-website/guide/#tymly-cli
 
