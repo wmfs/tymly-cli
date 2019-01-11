@@ -19,7 +19,13 @@
     "url": "https://github.com/wmfs/tymly-cli/issues"
   },
   "main": "index.js",
-  "dependencies": {},
+  "bin": {
+    "tymly": "bin/tymly-cli.js"
+  },
+  "dependencies": {
+    "chalk": "2.4.2",
+    "commander": "2.19.0"
+  },
   "devDependencies": {
     "@semantic-release/changelog": "3.0.1",
     "@semantic-release/git": "7.0.6",
