@@ -23,8 +23,10 @@
     "tymly": "bin/tymly-cli.js"
   },
   "dependencies": {
-    "chalk": "2.4.2",
-    "commander": "2.19.0"
+    "@wmfs/tymly-scaffold": "1.0.0",
+    "ansi-color": "0.2.1",
+    "commander": "2.19.0",
+    "enquirer": "2.3.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "3.0.1",
