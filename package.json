@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@wmfs/tymly-scaffold": "1.0.0",
-    "ansi-color": "0.2.1",
+    "ansi-colors": "3.2.3",
     "commander": "2.19.0",
     "enquirer": "2.3.0"
   },
