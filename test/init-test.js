@@ -35,6 +35,7 @@ describe('tymly init command', () => {
   })
 
   it('does nothing if target directory already exists', async () => {
+    stdMocks.use()
     const expectedNotEmpty = path.join(expectedPath, 'not-empty')
     const dirName = path.join(outputPath, 'not-empty')
 
@@ -43,6 +44,7 @@ describe('tymly init command', () => {
     await initAction('tymly-pizza-blueprint', {
       path: dirName
     })
+    stdMocks.use()
 
     compareDirectories(expectedNotEmpty, dirName)
   })
