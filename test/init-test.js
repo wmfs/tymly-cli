@@ -13,6 +13,8 @@ const jsdiff = require('diff')
 
 const initAction = require('../lib/actions/init')
 
+const backspace = '\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f'
+
 describe('tymly init command', () => {
   const basePath = path.join(__dirname, 'fixtures')
   const expectedPath = path.join(basePath, 'expected')
@@ -64,6 +66,19 @@ describe('tymly init command', () => {
       'MIT',
       'wmfs',
       '',
+      'Y',
+      'travis'
+    ],
+    'no blanks allowed in github or npm org': [
+      'tymly-pizza-blueprint',
+      'For ordering delicious pizza',
+      'Jane Doe',
+      'West Midlands Fire Service',
+      'MIT',
+      'w m f s',
+      backspace + 'wmfs',
+      'w m f s',
+      backspace + 'wmfs',
       'Y',
       'travis'
     ]
