@@ -8,7 +8,7 @@ const bddStdin = require('bdd-stdin')
 const stdMocks = require('std-mocks')
 const rimraf = require('rimraf')
 const path = require('path')
-const fs = require('fs')
+const fs = require('fs-extra')
 const jsdiff = require('diff')
 
 const initAction = require('../lib/actions/init')
@@ -32,6 +32,19 @@ describe('tymly init command', () => {
     })
 
     expect(doesNotExist(dirName)).to.be.true()
+  })
+
+  it('does nothing if target directory already exists', async () => {
+    const expectedNotEmpty = path.join(expectedPath, 'not-empty')
+    const dirName = path.join(outputPath, 'not-empty')
+
+    fs.copySync(expectedNotEmpty, dirName)
+
+    await initAction('tymly-pizza-blueprint', {
+      path: dirName
+    })
+
+    compareDirectories(expectedNotEmpty, dirName)
   })
 
   const tests = {
