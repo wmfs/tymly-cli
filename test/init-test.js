@@ -55,18 +55,18 @@ describe('tymly init command', () => {
       'wmfs',
       'Y',
       'travis'
-    ] /*,
+    ],
     'default npm org to wmfs org': [
       'tymly-pizza-blueprint',
       'For ordering delicious pizza',
       'Jane Doe',
-      'West Midlands Fire Service',
+      'The Trousers',
       'MIT',
       'wmfs',
       '',
       'Y',
       'travis'
-    ] */
+    ]
   }
 
   for (const [name, params] of Object.entries(tests)) {
