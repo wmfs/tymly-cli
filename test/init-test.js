@@ -24,6 +24,16 @@ describe('tymly init command', () => {
     rimraf.sync(outputPath)
   })
 
+  it('does nothing if no blueprint name provided', async () => {
+    const dirName = path.join(outputPath, 'do-nothing')
+
+    await initAction(null, {
+      path: dirName
+    })
+
+    expect(doesNotExist(dirName)).to.be.true()
+  })
+
   const tests = {
     'fill out all answers': [
       'tymly-pizza-blueprint',
