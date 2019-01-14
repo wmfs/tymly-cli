@@ -5,6 +5,7 @@ chai.use(require('chai-fs'))
 chai.use(require('dirty-chai'))
 const expect = chai.expect
 const bddStdin = require('bdd-stdin')
+const stdMocks = require('std-mocks')
 const rimraf = require('rimraf')
 const path = require('path')
 const fs = require('fs')
@@ -21,26 +22,72 @@ describe('tymly init command', () => {
     rimraf.sync(outputPath)
   })
 
-  it('fill out all answers to create blueprint skeleton', async () => {
-    bddStdin(
-      'For ordering delicious pizza\n',
-      'Jane Doe\n',
-      'West Midlands Fire Service\n',
-      'MIT\n',
-      'wmfs\n',
-      'wmfs\n',
-      '\n',
-      '\n'
-    )
+  const tests = {
+    'fill out all answers': [
+      'tymly-pizza-blueprint',
+      'For ordering delicious pizza',
+      'Jane Doe',
+      'West Midlands Fire Service',
+      'MIT',
+      'wmfs',
+      'wmfs',
+      'Y',
+      'travis'
+    ],
+    'default org name from organisation initials': [
+      'tymly-pizza-blueprint',
+      'For ordering delicious pizza',
+      'Jane Doe',
+      'West Midlands Fire Service',
+      'MIT',
+      '',
+      '',
+      'Y',
+      'travis'
+    ],
+    'default org name from organisation if single word': [
+      'tymly-pizza-blueprint',
+      'For ordering delicious pizza',
+      'Jane Doe',
+      'WestMidlandsFireService',
+      'MIT',
+      '',
+      'wmfs',
+      'Y',
+      'travis'
+    ] /*,
+    'default npm org to wmfs org': [
+      'tymly-pizza-blueprint',
+      'For ordering delicious pizza',
+      'Jane Doe',
+      'West Midlands Fire Service',
+      'MIT',
+      'wmfs',
+      '',
+      'Y',
+      'travis'
+    ] */
+  }
 
-    const blueprintDir = path.join(outputPath, 'test-a')
+  for (const [name, params] of Object.entries(tests)) {
+    it(name, async () => {
+      stdMocks.use()
 
-    await initAction('tymly-pizza-blueprint', {
-      path: blueprintDir
+      const blueprintName = params.shift()
+      const dirName = name.replace(/ /g, '-')
+
+      bddStdin(
+        ...params.map(p => `${p}\n`)
+      )
+
+      await initAction(blueprintName, {
+        path: path.join(outputPath, dirName)
+      })
+
+      stdMocks.restore()
+      compareOutputs(dirName)
     })
-
-    compareOutputs('test-a')
-  })
+  }
 
   function compareOutputs (testDir) {
     const expectedDir = path.join(expectedPath, testDir)
@@ -58,7 +105,7 @@ describe('tymly init command', () => {
   function compareDirectories (expectedDir, outputDir, errors) {
     if (doesNotExist(outputDir)) {
       errors.push(`Missing directory ${outputDir}`)
-      return
+      return errors
     }
 
     for (const file of fs.readdirSync(expectedDir)) {

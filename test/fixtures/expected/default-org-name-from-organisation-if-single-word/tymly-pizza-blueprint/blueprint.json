@@ -1,0 +1,9 @@
+{
+  "name": "tymly-pizza-blueprint",
+  "version": "1.0.0",
+  "label": "",
+  "organisation": "WestMidlandsFireService",
+  "author": "Jane Doe",
+  "description": "For ordering delicious pizza",
+  "categories": []
+}
