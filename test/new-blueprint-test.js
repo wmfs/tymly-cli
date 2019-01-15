@@ -11,11 +11,11 @@ const path = require('path')
 const fs = require('fs-extra')
 const jsdiff = require('diff')
 
-const initAction = require('../lib/actions/init')
+const newBlueprint = require('../lib/actions/new-blueprint')
 
 const backspace = '\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f'
 
-describe('tymly init command', () => {
+describe('tymly add-blueprint', () => {
   const basePath = path.join(__dirname, 'fixtures')
   const expectedPath = path.join(basePath, 'expected')
   const outputPath = path.join(basePath, 'output')
@@ -27,7 +27,7 @@ describe('tymly init command', () => {
   it('does nothing if no blueprint name provided', async () => {
     const dirName = path.join(outputPath, 'do-nothing')
 
-    await initAction(null, {
+    await newBlueprint(null, {
       path: dirName
     })
 
@@ -41,7 +41,7 @@ describe('tymly init command', () => {
 
     fs.copySync(expectedNotEmpty, dirName)
 
-    await initAction('tymly-pizza-blueprint', {
+    await newBlueprint('tymly-pizza-blueprint', {
       path: dirName
     })
     stdMocks.use()
@@ -120,7 +120,7 @@ describe('tymly init command', () => {
         ...params.map(p => `${p}\n`)
       )
 
-      await initAction(blueprintName, {
+      await newBlueprint(blueprintName, {
         path: path.join(outputPath, dirName)
       })
 
