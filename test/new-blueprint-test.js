@@ -40,9 +40,12 @@ describe('tymly new-blueprint', () => {
 
     fs.copySync(expectedNotEmpty, dirName)
 
-    await newBlueprint('tymly-pizza-blueprint', {
-      path: dirName
-    })
+    const cwd = process.cwd()
+    process.chdir(dirName)
+
+    await newBlueprint('tymly-pizza-blueprint', {})
+
+    process.chdir(cwd)
     stdMocks.restore()
 
     helpers.compareOutputs(suiteName, 'not-empty')
@@ -105,10 +108,23 @@ describe('tymly new-blueprint', () => {
       backspace + 'wmfs',
       'Y',
       'travis'
+    ],
+    '!use profile details': [
+      'tymly-pizza-blueprint',
+      'For ordering delicious pizza',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      ''
     ]
   }
 
-  for (const [name, params] of Object.entries(tests)) {
+  for (const [testname, params] of Object.entries(tests)) {
+    const profile = testname[0] === '!'
+    const name = testname.replace('!', '')
     it(name, async () => {
       stdMocks.use()
 
@@ -119,9 +135,14 @@ describe('tymly new-blueprint', () => {
         ...params.map(p => `${p}\n`)
       )
 
-      await newBlueprint(blueprintName, {
+      const options = {
         path: path.join(outputPath, dirName)
-      })
+      }
+      if (profile) {
+        options.profile = path.join(path.dirname(outputPath), 'profile')
+      }
+
+      await newBlueprint(blueprintName, options)
 
       stdMocks.restore()
       helpers.compareOutputs(suiteName, dirName)
