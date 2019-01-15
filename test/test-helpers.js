@@ -25,7 +25,7 @@ function fixturePath (testSuiteName) {
 }
 
 function compareOutputs (testSuiteName, testDir) {
-  const { expectedPath, outputPath } = fixturePath('new-blueprint')
+  const { expectedPath, outputPath } = fixturePath(testSuiteName)
   const expectedDir = path.join(expectedPath, testDir)
   const outputDir = path.join(outputPath, testDir)
 

@@ -26,7 +26,8 @@
     "@wmfs/tymly-scaffold": "1.0.0",
     "ansi-colors": "3.2.3",
     "commander": "2.19.0",
-    "enquirer": "2.3.0"
+    "enquirer": "2.3.0",
+    "fs-extra": "7.0.1"
   },
   "devDependencies": {
     "@semantic-release/changelog": "3.0.1",
@@ -38,7 +39,6 @@
     "cz-conventional-changelog": "2.1.0",
     "diff": "4.0.1",
     "dirty-chai": "2.0.1",
-    "fs-extra": "7.0.1",
     "mocha": "5.2.0",
     "nyc": "13.1.0",
     "request-promise-native": "1.0.5",
