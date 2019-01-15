@@ -3,7 +3,7 @@
 const bddStdin = require('bdd-stdin')
 const stdMocks = require('std-mocks')
 const path = require('path')
-
+const fs = require('fs-extra')
 const helpers = require('./test-helpers')
 
 const initAction = require('../lib/actions').initAction
@@ -50,14 +50,41 @@ describe('tymly init', () => {
       backspace + 'wmfs',
       'w m f s',
       backspace + 'wmfs'
+    ],
+    '+overwrite all answers': [
+      'John Smith',
+      'West Bridgford Hockey Club',
+      'wbhc',
+      'johnsmith'
+    ],
+    '+overwrite no answers': [
+      '',
+      '',
+      '',
+      ''
+    ],
+    '+overwrite organisation answer': [
+      '',
+      'The Harlem Globetrotters',
+      '',
+      ''
     ]
   }
 
-  for (const [name, params] of Object.entries(tests)) {
+  for (const [testname, params] of Object.entries(tests)) {
+    const update = testname[0] === '+'
+    const name = testname.replace('+', '')
     it(name, async () => {
       stdMocks.use()
 
       const dirName = name.replace(/ /g, '-')
+
+      if (update) {
+        fs.copySync(
+          path.join(path.dirname(outputPath), 'initial', dirName),
+          path.join(outputPath, dirName)
+        )
+      }
 
       bddStdin(
         ...params.map(p => `${p}\n`)
