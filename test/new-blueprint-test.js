@@ -1,27 +1,26 @@
 /* eslint-env mocha */
 
 const chai = require('chai')
-chai.use(require('chai-fs'))
 chai.use(require('dirty-chai'))
 const expect = chai.expect
+
 const bddStdin = require('bdd-stdin')
 const stdMocks = require('std-mocks')
-const rimraf = require('rimraf')
 const path = require('path')
 const fs = require('fs-extra')
-const jsdiff = require('diff')
 
-const newBlueprint = require('../lib/actions/new-blueprint')
+const helpers = require('./test-helpers')
+
+const newBlueprint = require('../lib/actions').newBlueprintAction
 
 const backspace = '\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f'
 
-describe('tymly add-blueprint', () => {
-  const basePath = path.join(__dirname, 'fixtures')
-  const expectedPath = path.join(basePath, 'expected')
-  const outputPath = path.join(basePath, 'output')
+describe('tymly new-blueprint', () => {
+  const suiteName = 'new-blueprint'
+  const { expectedPath, outputPath } = helpers.fixturePath(suiteName)
 
   before(() => {
-    rimraf.sync(outputPath)
+    helpers.prepareFixture(suiteName)
   })
 
   it('does nothing if no blueprint name provided', async () => {
@@ -31,7 +30,7 @@ describe('tymly add-blueprint', () => {
       path: dirName
     })
 
-    expect(doesNotExist(dirName)).to.be.true()
+    expect(helpers.doesNotExist(dirName)).to.be.true()
   })
 
   it('does nothing if target directory already exists', async () => {
@@ -44,9 +43,9 @@ describe('tymly add-blueprint', () => {
     await newBlueprint('tymly-pizza-blueprint', {
       path: dirName
     })
-    stdMocks.use()
+    stdMocks.restore()
 
-    compareDirectories(expectedNotEmpty, dirName)
+    helpers.compareOutputs(suiteName, 'not-empty')
   })
 
   const tests = {
@@ -125,85 +124,7 @@ describe('tymly add-blueprint', () => {
       })
 
       stdMocks.restore()
-      compareOutputs(dirName)
+      helpers.compareOutputs(suiteName, dirName)
     })
-  }
-
-  function compareOutputs (testDir) {
-    const expectedDir = path.join(expectedPath, testDir)
-    const outputDir = path.join(outputPath, testDir)
-
-    const errors = compareDirectories(expectedDir, outputDir, [])
-    errors.forEach(e => {
-      const pattern = new RegExp(`(\\s[^\\s]*)${testDir}`)
-      const m = e.replace(pattern, ` ${testDir}`)
-      console.log(m)
-    })
-    expect(errors.length).to.eql(0)
-  }
-
-  function compareDirectories (expectedDir, outputDir, errors) {
-    if (doesNotExist(outputDir)) {
-      errors.push(`Missing directory ${outputDir}`)
-      return errors
-    }
-
-    for (const file of fs.readdirSync(expectedDir)) {
-      const expected = path.join(expectedDir, file)
-      const output = path.join(outputDir, file)
-
-      if (fs.statSync(expected).isDirectory()) {
-        compareDirectories(expected, output, errors)
-      } else {
-        compareFiles(expected, output, errors)
-      }
-    } // for ...
-
-    return errors
-  } // compareDirectories
-
-  function compareFiles (expectedFile, outputFile, errors) {
-    if (doesNotExist(outputFile)) {
-      errors.push(`Missing file ${outputFile}`)
-      return
-    }
-
-    const expected = fs.readFileSync(expectedFile, 'utf8')
-    const output = fs.readFileSync(outputFile, 'utf8')
-
-    const diff = jsdiff.diffLines(expected, output)
-    if (diff.length === 1) return
-
-    let error = `Error in file ${outputFile}`
-    for (const d of diff) {
-      if (d.added) {
-        error += fileError('+', d.value)
-      }
-      if (d.removed) {
-        error += fileError('-', d.value)
-      }
-    }
-
-    errors.push(error)
-  } // compareFiles
-
-  function fileError (flag, value) {
-    if (value === '\n') {
-      return `\n  ${flag}`
-    }
-
-    return value
-      .split('\n')
-      .map(v => v ? `\n  ${flag} ${v}` : '')
-      .join('')
-  }
-
-  function doesNotExist (fileOrDir) {
-    try {
-      fs.statSync(fileOrDir)
-      return false
-    } catch (e) {
-      return true
-    }
   }
 })
