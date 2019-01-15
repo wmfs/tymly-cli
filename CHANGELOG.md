@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/wmfs/tymly-cli/compare/v2.1.0...v2.2.0) (2019-01-15)
+
+
+### ✨ Features
+
+* Hook profile into new-blueprint ([ba732d3](https://github.com/wmfs/tymly-cli/commit/ba732d3))
+
 # [2.1.0](https://github.com/wmfs/tymly-cli/compare/v2.0.0...v2.1.0) (2019-01-15)
 
 
