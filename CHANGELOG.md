@@ -1,3 +1,21 @@
+# [2.1.0](https://github.com/wmfs/tymly-cli/compare/v2.0.0...v2.1.0) (2019-01-15)
+
+
+### ✨ Features
+
+* Factored out Profile ([957364e](https://github.com/wmfs/tymly-cli/commit/957364e))
+* Sketch out what 'tymly init' should actually be. ([2ea6bcb](https://github.com/wmfs/tymly-cli/commit/2ea6bcb))
+
+
+### 🐛 Bug Fixes
+
+* **$jezbrain:** s/init/newBlueprint/g ([53d70e6](https://github.com/wmfs/tymly-cli/commit/53d70e6))
+
+
+### 📚 Documentation
+
+* Reset CHANGELOG ([703e911](https://github.com/wmfs/tymly-cli/commit/703e911))
+
 # 2.0.0 (2019-01-14)
 
 
@@ -33,4 +51,3 @@
 ### ♻️ Chores
 
 * Startup housekeeping - LICENSE, .gitignore, skeleton package.json, that kind of thing ([0576268](https://github.com/wmfs/tymly-cli/commit/0576268))
-
