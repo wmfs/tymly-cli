@@ -7,6 +7,8 @@ const addModelTest = require('../lib/actions').addModelAction
 describe('tymly add-model', () => {
   const tests = {
     'named-pizza': [
+      'pizza',
+      'Pizza',
       'A pizza',
       'name',
       'string',
@@ -24,11 +26,13 @@ describe('tymly add-model', () => {
   })
 
   for (const [name, inputs] of Object.entries(tests)) {
+    const pizzaName = inputs.shift()
     helpers.runTest(
       suiteName,
       name,
       inputs,
       addModelTest,
+      pizzaName,
       { }
     )
   }
