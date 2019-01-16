@@ -1,21 +1,11 @@
 /* eslint-env mocha */
 
-const bddStdin = require('bdd-stdin')
-const stdMocks = require('std-mocks')
 const path = require('path')
-const fs = require('fs-extra')
 const helpers = require('./test-helpers')
 
 const initAction = require('../lib/actions').initAction
 
 describe('tymly init', () => {
-  const suiteName = 'init'
-  let outputPath
-
-  before(() => {
-    outputPath = helpers.prepareFixture(suiteName)
-  })
-
   const tests = {
     'fill out all answers': [
       'Jane Doe',
@@ -49,19 +39,19 @@ describe('tymly init', () => {
       'w m f s',
       helpers.backspace + 'wmfs'
     ],
-    '+overwrite all answers': [
+    'overwrite all answers': [
       'John Smith',
       'West Bridgford Hockey Club',
       'wbhc',
       'johnsmith'
     ],
-    '+overwrite no answers': [
+    'overwrite no answers': [
       '',
       '',
       '',
       ''
     ],
-    '+overwrite organisation answer': [
+    'overwrite organisation answer': [
       '',
       'The Harlem Globetrotters',
       '',
@@ -69,31 +59,21 @@ describe('tymly init', () => {
     ]
   }
 
-  for (const [testname, params] of Object.entries(tests)) {
-    const update = testname[0] === '+'
-    const name = testname.replace('+', '')
-    it(name, async () => {
-      stdMocks.use()
+  const suiteName = 'init'
 
-      const dirName = name.replace(/ /g, '-')
+  before(() => {
+    helpers.prepareFixture(suiteName)
+  })
 
-      if (update) {
-        fs.copySync(
-          path.join(path.dirname(outputPath), 'initial', dirName),
-          path.join(outputPath, dirName)
-        )
+  for (const [name, inputs] of Object.entries(tests)) {
+    helpers.runTest(
+      suiteName,
+      name,
+      inputs,
+      initAction,
+      {
+        profile: name
       }
-
-      bddStdin(
-        ...params.map(p => `${p}\n`)
-      )
-
-      await initAction({
-        profile: path.join(outputPath, dirName)
-      })
-
-      stdMocks.restore()
-      helpers.compareOutputs(suiteName, dirName)
-    })
+    )
   }
 })

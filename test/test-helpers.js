@@ -1,26 +1,74 @@
 const chai = require('chai')
 chai.use(require('dirty-chai'))
-const expect = chai.expect
+const fail = chai.expect.fail
 
+const bddStdin = require('bdd-stdin')
+const stdMocks = require('std-mocks')
 const path = require('path')
-const fs = require('fs')
+const fs = require('fs-extra')
 const rimraf = require('rimraf')
 const jsdiff = require('diff')
 
 function prepareFixture (testSuiteName) {
-  const { outputPath } = fixturePath(testSuiteName)
+  const { initialPath, outputPath } = fixturePath(testSuiteName)
+
   rimraf.sync(outputPath)
+
+  if (initialPath) {
+    for (const item of fs.readdirSync(initialPath)) {
+      fs.copySync(
+        path.join(initialPath, item),
+        path.join(outputPath, item)
+      )
+    }
+  }
+
   return outputPath
+}
+
+function runTest (suiteName, testName, inputs, actionFn, ...args) {
+  it(testName, async () => {
+    stdMocks.use()
+
+    const { outputPath } = fixturePath(suiteName)
+    const dirName = testName.replace(/ /g, '-')
+
+    bddStdin(
+      ...inputs.map(p => `${p}\n`)
+    )
+
+    const options = args[args.length - 1]
+    for (const p of ['path', 'profile']) {
+      if (options && options[p] === testName) {
+        options[p] = path.join(outputPath, dirName)
+      }
+    }
+
+    let ohDear = null
+    try {
+      await actionFn(...args)
+    } catch (e) {
+      ohDear = e
+    }
+
+    stdMocks.restore()
+    if (ohDear) {
+      throw ohDear
+    }
+    compareOutputs(suiteName, dirName)
+  })
 }
 
 function fixturePath (testSuiteName) {
   const basePath = path.join(__dirname, 'fixtures', testSuiteName)
+  const initialPath = path.join(basePath, 'initial')
   const expectedPath = path.join(basePath, 'expected')
   const outputPath = path.join(basePath, 'output')
 
   return {
     expectedPath,
-    outputPath
+    outputPath,
+    initialPath: fs.pathExistsSync(initialPath) ? initialPath : null
   }
 }
 
@@ -35,7 +83,10 @@ function compareOutputs (testSuiteName, testDir) {
     const m = e.replace(pattern, ` ${testDir}`)
     console.log(m)
   })
-  expect(errors.length).to.eql(0)
+
+  if (errors.length) {
+    fail()
+  }
 }
 
 function compareDirectories (expectedDir, outputDir, errors) {
@@ -108,5 +159,6 @@ module.exports = {
   prepareFixture,
   doesNotExist,
   compareOutputs,
+  runTest,
   backspace: '\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f'
 }
