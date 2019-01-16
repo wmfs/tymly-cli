@@ -107,5 +107,6 @@ module.exports = {
   fixturePath,
   prepareFixture,
   doesNotExist,
-  compareOutputs
+  compareOutputs,
+  backspace: '\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f'
 }

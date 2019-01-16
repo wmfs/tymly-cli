@@ -8,8 +8,6 @@ const helpers = require('./test-helpers')
 
 const initAction = require('../lib/actions').initAction
 
-const backspace = '\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f'
-
 describe('tymly init', () => {
   const suiteName = 'init'
   let outputPath
@@ -47,9 +45,9 @@ describe('tymly init', () => {
       'Jane Doe',
       'West Midlands Fire Service',
       'w m f s',
-      backspace + 'wmfs',
+      helpers.backspace + 'wmfs',
       'w m f s',
-      backspace + 'wmfs'
+      helpers.backspace + 'wmfs'
     ],
     '+overwrite all answers': [
       'John Smith',

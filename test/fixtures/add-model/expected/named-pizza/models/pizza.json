@@ -1,0 +1,15 @@
+{
+  "title": "pizza",
+  "description": "A pizza",
+  "primaryKey": [
+    "name"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

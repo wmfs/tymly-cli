@@ -13,8 +13,6 @@ const helpers = require('./test-helpers')
 
 const newBlueprint = require('../lib/actions').newBlueprintAction
 
-const backspace = '\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f'
-
 describe('tymly new-blueprint', () => {
   const suiteName = 'new-blueprint'
   const { expectedPath, outputPath } = helpers.fixturePath(suiteName)
@@ -103,9 +101,9 @@ describe('tymly new-blueprint', () => {
       'West Midlands Fire Service',
       'MIT',
       'w m f s',
-      backspace + 'wmfs',
+      helpers.backspace + 'wmfs',
       'w m f s',
-      backspace + 'wmfs',
+      helpers.backspace + 'wmfs',
       'Y',
       'travis'
     ],
