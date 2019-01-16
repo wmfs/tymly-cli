@@ -4,10 +4,7 @@ const chai = require('chai')
 chai.use(require('dirty-chai'))
 const expect = chai.expect
 
-const bddStdin = require('bdd-stdin')
-const stdMocks = require('std-mocks')
 const path = require('path')
-const fs = require('fs-extra')
 
 const helpers = require('./test-helpers')
 
@@ -15,18 +12,18 @@ const newBlueprint = require('../lib/actions').newBlueprintAction
 
 describe('tymly new-blueprint', () => {
   const suiteName = 'new-blueprint'
-  const { expectedPath, outputPath } = helpers.fixturePath(suiteName)
+  let outputPath
 
   before(() => {
-    helpers.prepareFixture(suiteName)
+    outputPath = helpers.prepareFixture(suiteName)
   })
 
   it('does nothing if no blueprint name provided', async () => {
     const dirName = path.join(outputPath, 'do-nothing')
 
-    await newBlueprint(null, {
-      path: dirName
-    })
+    await newBlueprint('   ', { })
+    await newBlueprint('', { })
+    await newBlueprint(null, { })
 
     expect(helpers.doesNotExist(dirName)).to.be.true()
   })

@@ -4,6 +4,7 @@ const fail = chai.expect.fail
 
 const bddStdin = require('bdd-stdin')
 const stdMocks = require('std-mocks')
+const mocha = require('mocha')
 const path = require('path')
 const fs = require('fs-extra')
 const rimraf = require('rimraf')
@@ -27,7 +28,7 @@ function prepareFixture (testSuiteName) {
 }
 
 function runTest (suiteName, testName, inputs, actionFn, ...args) {
-  it(testName, async () => {
+  mocha.it(testName, async () => {
     stdMocks.use()
 
     const { outputPath, profilePath } = fixturePath(suiteName)

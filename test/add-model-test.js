@@ -1,12 +1,5 @@
 /* eslint-env mocha */
 
-const fail = require('assert').fail
-
-const bddStdin = require('bdd-stdin')
-const stdMocks = require('std-mocks')
-const path = require('path')
-const fs = require('fs-extra')
-
 const helpers = require('./test-helpers')
 
 const addModelTest = require('../lib/actions').addModelAction
