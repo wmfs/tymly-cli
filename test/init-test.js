@@ -1,6 +1,5 @@
 /* eslint-env mocha */
 
-const path = require('path')
 const helpers = require('./test-helpers')
 
 const initAction = require('../lib/actions').initAction

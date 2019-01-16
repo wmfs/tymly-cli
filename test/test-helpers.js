@@ -30,12 +30,12 @@ function runTest (suiteName, testName, inputs, actionFn, ...args) {
   it(testName, async () => {
     stdMocks.use()
 
-    const { outputPath } = fixturePath(suiteName)
+    const { outputPath, profilePath } = fixturePath(suiteName)
     const dirName = testName.replace(/ /g, '-')
 
-    bddStdin(
-      ...inputs.map(p => `${p}\n`)
-    )
+    if (inputs.length) {
+      bddStdin(inputs.map(p => `${p}\n`))
+    }
 
     const options = args[args.length - 1]
     for (const p of ['path', 'profile']) {
@@ -44,6 +44,16 @@ function runTest (suiteName, testName, inputs, actionFn, ...args) {
       }
     }
 
+    const testProfile = path.join(profilePath, dirName)
+    if (fs.pathExistsSync(testProfile)) {
+      options.profile = testProfile
+    }
+
+    const cwd = process.cwd()
+    const twd = path.join(outputPath, dirName)
+    fs.mkdirsSync(twd)
+    process.chdir(twd)
+
     let ohDear = null
     try {
       await actionFn(...args)
@@ -51,6 +61,7 @@ function runTest (suiteName, testName, inputs, actionFn, ...args) {
       ohDear = e
     }
 
+    process.chdir(cwd)
     stdMocks.restore()
     if (ohDear) {
       throw ohDear
@@ -64,10 +75,12 @@ function fixturePath (testSuiteName) {
   const initialPath = path.join(basePath, 'initial')
   const expectedPath = path.join(basePath, 'expected')
   const outputPath = path.join(basePath, 'output')
+  const profilePath = path.join(basePath, 'profile')
 
   return {
     expectedPath,
     outputPath,
+    profilePath,
     initialPath: fs.pathExistsSync(initialPath) ? initialPath : null
   }
 }

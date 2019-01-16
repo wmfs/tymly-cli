@@ -31,24 +31,6 @@ describe('tymly new-blueprint', () => {
     expect(helpers.doesNotExist(dirName)).to.be.true()
   })
 
-  it('does nothing if target directory already exists', async () => {
-    stdMocks.use()
-    const expectedNotEmpty = path.join(expectedPath, 'not-empty')
-    const dirName = path.join(outputPath, 'not-empty')
-
-    fs.copySync(expectedNotEmpty, dirName)
-
-    const cwd = process.cwd()
-    process.chdir(dirName)
-
-    await newBlueprint('tymly-pizza-blueprint', {})
-
-    process.chdir(cwd)
-    stdMocks.restore()
-
-    helpers.compareOutputs(suiteName, 'not-empty')
-  })
-
   const tests = {
     'fill out all answers': [
       'tymly-pizza-blueprint',
@@ -107,7 +89,7 @@ describe('tymly new-blueprint', () => {
       'Y',
       'travis'
     ],
-    '!use profile details': [
+    'use profile details': [
       'tymly-pizza-blueprint',
       'For ordering delicious pizza',
       '',
@@ -117,33 +99,24 @@ describe('tymly new-blueprint', () => {
       '',
       '',
       ''
+    ],
+    'do nothing if not empty': [
+      'tymly-pizza-blueprint'
     ]
   }
 
-  for (const [testname, params] of Object.entries(tests)) {
-    const profile = testname[0] === '!'
-    const name = testname.replace('!', '')
-    it(name, async () => {
-      stdMocks.use()
+  for (const [name, inputs] of Object.entries(tests)) {
+    const blueprintName = inputs.shift()
 
-      const blueprintName = params.shift()
-      const dirName = name.replace(/ /g, '-')
-
-      bddStdin(
-        ...params.map(p => `${p}\n`)
-      )
-
-      const options = {
-        path: path.join(outputPath, dirName)
+    helpers.runTest(
+      suiteName,
+      name,
+      inputs,
+      newBlueprint,
+      blueprintName,
+      {
+        path: name
       }
-      if (profile) {
-        options.profile = path.join(path.dirname(outputPath), 'profile')
-      }
-
-      await newBlueprint(blueprintName, options)
-
-      stdMocks.restore()
-      helpers.compareOutputs(suiteName, dirName)
-    })
+    )
   }
 })
