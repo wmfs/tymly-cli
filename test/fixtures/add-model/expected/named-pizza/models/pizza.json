@@ -1,15 +1,17 @@
 {
-  "title": "pizza",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Pizza",
   "description": "A pizza",
-  "primaryKey": [
-    "name"
-  ],
+  "type": "object",
   "properties": {
     "name": {
       "type": "string"
     }
   },
   "required": [
+    "name"
+  ],
+  "primaryKey": [
     "name"
   ]
 }
