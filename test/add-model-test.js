@@ -2,7 +2,7 @@
 
 const helpers = require('./test-helpers')
 
-const addModelTest = require('../lib/actions').addModelAction
+const addModel = require('../lib/actions').addModelAction
 
 describe('tymly add-model', () => {
   /*
@@ -83,7 +83,7 @@ describe('tymly add-model', () => {
       suiteName,
       name,
       inputs,
-      addModelTest,
+      addModel,
       pizzaName,
       { }
     )
