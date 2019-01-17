@@ -174,7 +174,7 @@ module.exports = {
   doesNotExist,
   compareOutputs,
   runTest,
-  backspace: '\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f',
+  backspace: '\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f\u007f',
   up: bddStdin.keys.up,
   down: bddStdin.keys.down,
   left: bddStdin.keys.left,

@@ -55,7 +55,20 @@ describe('tymly add-model', () => {
       '',
       '',
       ''
-    ]
+    ],
+    'no-blanks-in-field-names': [
+      'pizza',
+      'Pizza',
+      'A pizza',
+      'a loveley name',
+      helpers.backspace + 'name',
+      '',
+      'string',
+      'Y',
+      'Y',
+      ''
+    ],
+
   }
 
   const suiteName = 'add-model'
