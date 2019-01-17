@@ -51,7 +51,7 @@ describe('tymly add-model', () => {
       '',
       'vegetarian',
       '',
-      helpers.down+helpers.down,
+      helpers.down + helpers.down,
       '',
       '',
       ''
@@ -67,7 +67,7 @@ describe('tymly add-model', () => {
       'Y',
       'Y',
       ''
-    ],
+    ]
 
   }
 
