@@ -10,23 +10,20 @@
     },
     {
       "id": "code",
-      "type": "Input.Text",
-      "title": "Unique code of the pizza"
+      "type": "Input.Text"
     },
     {
       "id": "label",
       "type": "Input.Text",
-      "title": "Customer-facing label",
+      "title": "Customer-facing label"
     },
     {
       "id": "popularitySeq",
-      "type": "Input.Number",
-      "title": "Integer value to order lists by"
+      "type": "Input.Number"
     },
     {
       "id": "vegetarian",
-      "type": "Input.Toggle",
-      "title": "Is the pizza suitable for vegetarians?"
+      "type": "Input.Toggle"
     }
   ],
   "actions": [
