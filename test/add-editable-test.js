@@ -7,9 +7,19 @@ const addEditable = require('../lib/actions').addEditableAction
 describe('tymly add-editable', () => {
   const tests = {
     'one-model': [
+      'Y'
     ],
     'two-models': [
-      helpers.down
+      helpers.down,
+      'Y'
+    ],
+    'two-models-choose-fields': [
+      helpers.down,
+      'N',
+      '',
+      '',
+      'N',
+      ''
     ]
   }
 
