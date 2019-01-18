@@ -1,3 +1,10 @@
+# [2.4.0](https://github.com/wmfs/tymly-cli/compare/v2.3.0...v2.4.0) (2019-01-18)
+
+
+### ✨ Features
+
+* Implemented property subset form generation ([b5720d8](https://github.com/wmfs/tymly-cli/commit/b5720d8))
+
 # [2.3.0](https://github.com/wmfs/tymly-cli/compare/v2.2.0...v2.3.0) (2019-01-18)
 
 
