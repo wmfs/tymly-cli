@@ -1,3 +1,49 @@
+# [2.3.0](https://github.com/wmfs/tymly-cli/compare/v2.2.0...v2.3.0) (2019-01-18)
+
+
+### ✨ Features
+
+* Add property title ([9108e07](https://github.com/wmfs/tymly-cli/commit/9108e07))
+* add-editable for blueprints with one model ([cee1afd](https://github.com/wmfs/tymly-cli/commit/cee1afd))
+* Hook add-editable into cli ([c2af9db](https://github.com/wmfs/tymly-cli/commit/c2af9db))
+* No spaces allowed in property names ([9b84591](https://github.com/wmfs/tymly-cli/commit/9b84591))
+* Select model property type from Scaffold.ModelTypes list ([739723c](https://github.com/wmfs/tymly-cli/commit/739723c))
+* tymly add-model <model> ([ef9de61](https://github.com/wmfs/tymly-cli/commit/ef9de61))
+
+
+### 🐛 Bug Fixes
+
+* add-editable lets you select the model when there's more than one ([ee46850](https://github.com/wmfs/tymly-cli/commit/ee46850))
+* stubbed out add editable action ([493dabd](https://github.com/wmfs/tymly-cli/commit/493dabd))
+* **deps:** Update tymly-scaffold dependency ([b56968d](https://github.com/wmfs/tymly-cli/commit/b56968d))
+
+
+### 📦 Code Refactoring
+
+* Pull out Blueprint wrapper class ([64a8bb8](https://github.com/wmfs/tymly-cli/commit/64a8bb8))
+* Pull out noSpaces validation ([3ad5563](https://github.com/wmfs/tymly-cli/commit/3ad5563))
+
+
+### 🚨 Tests
+
+* 100% coverage. w00t ([bd91d54](https://github.com/wmfs/tymly-cli/commit/bd91d54))
+* add-model test with multiple fields ([e90ecaa](https://github.com/wmfs/tymly-cli/commit/e90ecaa))
+* Factor out test running. Stub addModel ([30da480](https://github.com/wmfs/tymly-cli/commit/30da480))
+* First add-editable test ([2211b63](https://github.com/wmfs/tymly-cli/commit/2211b63))
+* First test for tymly add-model ([c7ecdf2](https://github.com/wmfs/tymly-cli/commit/c7ecdf2))
+* outlined add-model ([d676d53](https://github.com/wmfs/tymly-cli/commit/d676d53))
+* runTest changes wd to output directory before action, reverts afterwards ([872d4ee](https://github.com/wmfs/tymly-cli/commit/872d4ee))
+
+
+### ⚙️ Continuous Integrations
+
+* Bumped Node from 9 to 10 ([e1f1901](https://github.com/wmfs/tymly-cli/commit/e1f1901))
+
+
+### 💎 Styles
+
+* Lint fixes ([192f769](https://github.com/wmfs/tymly-cli/commit/192f769))
+
 # [2.2.0](https://github.com/wmfs/tymly-cli/compare/v2.1.0...v2.2.0) (2019-01-15)
 
 
