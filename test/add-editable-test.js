@@ -7,11 +7,13 @@ const addEditable = require('../lib/actions').addEditableAction
 describe('tymly add-editable', () => {
   const tests = {
     'one-model': [
-      'Y'
+      'Y',
+      ''
     ],
     'two-models': [
       helpers.down,
-      'Y'
+      'Y',
+      ''
     ],
     'two-models-choose-fields': [
       helpers.down,
@@ -19,7 +21,12 @@ describe('tymly add-editable', () => {
       '',
       '',
       'N',
+      '',
       ''
+    ],
+    'set-file-name': [
+      'Y',
+      'the-pizza-form.json'
     ]
   }
 
