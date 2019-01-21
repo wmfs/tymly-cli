@@ -1,3 +1,10 @@
+# [2.5.0](https://github.com/wmfs/tymly-cli/compare/v2.4.0...v2.5.0) (2019-01-21)
+
+
+### ✨ Features
+
+* add-editable solicits filename before scaffolding form ([f0337e8](https://github.com/wmfs/tymly-cli/commit/f0337e8))
+
 # [2.4.0](https://github.com/wmfs/tymly-cli/compare/v2.3.0...v2.4.0) (2019-01-18)
 
 
