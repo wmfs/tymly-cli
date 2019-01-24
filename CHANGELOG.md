@@ -1,3 +1,15 @@
+# [2.6.0](https://github.com/wmfs/tymly-cli/compare/v2.5.0...v2.6.0) (2019-01-24)
+
+
+### ✨ Features
+
+* add-editable supports --model-path option, so you can scaffold a form for a model in another b ([a91bcc5](https://github.com/wmfs/tymly-cli/commit/a91bcc5))
+
+
+### 📦 Code Refactoring
+
+* Return model name and fields, rather than just name ([a2c94e5](https://github.com/wmfs/tymly-cli/commit/a2c94e5))
+
 # [2.5.0](https://github.com/wmfs/tymly-cli/compare/v2.4.0...v2.5.0) (2019-01-21)
 
 
