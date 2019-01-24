@@ -1,6 +1,7 @@
 /* eslint-env mocha */
 
 const helpers = require('./test-helpers')
+const path = require('path')
 
 const addEditable = require('../lib/actions').addEditableAction
 
@@ -27,7 +28,16 @@ describe('tymly add-editable', () => {
     'set-file-name': [
       'Y',
       'the-pizza-form.json'
-    ]
+    ],
+    'path-to-external-model': {
+      user: [
+        'Y',
+        ''
+      ],
+      options: {
+        'modelPath': path.join(__dirname, 'fixtures/additional-blueprint/models/drinks.json')
+      }
+    }
   }
 
   const suiteName = 'add-editable'
@@ -37,12 +47,19 @@ describe('tymly add-editable', () => {
   })
 
   for (const [name, inputs] of Object.entries(tests)) {
+    let userInput = inputs
+    let options = { }
+    if (!Array.isArray(inputs)) {
+      userInput = inputs.user
+      options = inputs.options
+    }
+
     helpers.runTest(
       suiteName,
       name,
-      inputs,
+      userInput,
       addEditable,
-      { }
+      options
     )
   }
 })
