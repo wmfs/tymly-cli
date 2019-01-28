@@ -1,4 +1,5 @@
 {
+  "namespace": "wmfs",
   "name": "tymly-pizza-blueprint",
   "version": "1.0.0",
   "label": "",

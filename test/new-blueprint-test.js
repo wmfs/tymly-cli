@@ -31,6 +31,7 @@ describe('tymly new-blueprint', () => {
   const tests = {
     'fill out all answers': [
       'tymly-pizza-blueprint',
+      'wmfs',
       'For ordering delicious pizza',
       'Jane Doe',
       'West Midlands Fire Service',
@@ -42,6 +43,7 @@ describe('tymly new-blueprint', () => {
     ],
     'default org name from organisation initials': [
       'tymly-pizza-blueprint',
+      'wmfs',
       'For ordering delicious pizza',
       'Jane Doe',
       'West Midlands Fire Service',
@@ -53,6 +55,7 @@ describe('tymly new-blueprint', () => {
     ],
     'default org name from organisation if single word': [
       'tymly-pizza-blueprint',
+      'wmfs',
       'For ordering delicious pizza',
       'Jane Doe',
       'WestMidlandsFireService',
@@ -64,6 +67,7 @@ describe('tymly new-blueprint', () => {
     ],
     'default npm org to wmfs org': [
       'tymly-pizza-blueprint',
+      'wmfs',
       'For ordering delicious pizza',
       'Jane Doe',
       'The Trousers',
@@ -75,6 +79,7 @@ describe('tymly new-blueprint', () => {
     ],
     'no blanks allowed in github or npm org': [
       'tymly-pizza-blueprint',
+      'wmfs',
       'For ordering delicious pizza',
       'Jane Doe',
       'West Midlands Fire Service',
@@ -88,6 +93,7 @@ describe('tymly new-blueprint', () => {
     ],
     'use profile details': [
       'tymly-pizza-blueprint',
+      'wmfs',
       'For ordering delicious pizza',
       '',
       '',
