@@ -1,3 +1,10 @@
+## [2.6.1](https://github.com/wmfs/tymly-cli/compare/v2.6.0...v2.6.1) (2019-01-28)
+
+
+### 🐛 Bug Fixes
+
+* Add namespace field to generated blueprint.json ([ed66f4e](https://github.com/wmfs/tymly-cli/commit/ed66f4e))
+
 # [2.6.0](https://github.com/wmfs/tymly-cli/compare/v2.5.0...v2.6.0) (2019-01-24)
 
 
