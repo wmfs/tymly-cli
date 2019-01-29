@@ -1,14 +1,20 @@
+/* eslint-env mocha */
+
 const chai = require('chai')
 chai.use(require('dirty-chai'))
 const fail = chai.expect.fail
 
 const bddStdin = require('bdd-stdin')
 const stdMocks = require('std-mocks')
-const mocha = require('mocha')
+
 const path = require('path')
 const fs = require('fs-extra')
 const rimraf = require('rimraf')
 const jsdiff = require('diff')
+
+const homedir = require('os').homedir()
+const userProfilePath = path.join(homedir, '.tymly', 'tymly-profile.json')
+const dinkedUserProfilePath = `${userProfilePath}.dink`
 
 function prepareFixture (testSuiteName) {
   const { initialPath, outputPath } = fixturePath(testSuiteName)
@@ -28,10 +34,11 @@ function prepareFixture (testSuiteName) {
 }
 
 function runTest (suiteName, testName, inputs, actionFn, ...args) {
-  mocha.it(testName, async () => {
+  it(testName, async () => {
+    dinkUserProfile()
     stdMocks.use()
 
-    const { outputPath, profilePath } = fixturePath(suiteName)
+    const { outputPath, profilePath = 'nowhere' } = fixturePath(suiteName)
     const dirName = testName.replace(/ /g, '-')
 
     if (inputs.length) {
@@ -64,6 +71,8 @@ function runTest (suiteName, testName, inputs, actionFn, ...args) {
 
     process.chdir(cwd)
     stdMocks.restore()
+    undinkUserProfile()
+
     if (ohDear) {
       throw ohDear
     }
@@ -165,6 +174,20 @@ function doesNotExist (fileOrDir) {
     return false
   } catch (e) {
     return true
+  }
+}
+
+function dinkUserProfile () {
+  moveIfExists(userProfilePath, dinkedUserProfilePath)
+}
+
+function undinkUserProfile () {
+  moveIfExists(dinkedUserProfilePath, userProfilePath)
+}
+
+function moveIfExists (from, to) {
+  if (fs.pathExistsSync(from)) {
+    fs.moveSync(from, to)
   }
 }
 
