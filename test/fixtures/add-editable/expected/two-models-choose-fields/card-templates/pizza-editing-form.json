@@ -10,7 +10,8 @@
     },
     {
       "id": "code",
-      "type": "Input.Text"
+      "type": "Input.Text",
+      "title": "Code"
     },
     {
       "id": "label",
@@ -19,7 +20,8 @@
     },
     {
       "id": "vegetarian",
-      "type": "Input.Toggle"
+      "type": "Input.Toggle",
+      "title": "Is it vegetarian?"
     }
   ],
   "actions": [

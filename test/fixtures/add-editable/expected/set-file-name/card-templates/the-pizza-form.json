@@ -10,7 +10,8 @@
     },
     {
       "id": "code",
-      "type": "Input.Text"
+      "type": "Input.Text",
+      "title": "Code"
     },
     {
       "id": "label",
@@ -19,11 +20,13 @@
     },
     {
       "id": "popularitySeq",
-      "type": "Input.Number"
+      "type": "Input.Number",
+      "title": "Popularity seq"
     },
     {
       "id": "vegetarian",
-      "type": "Input.Toggle"
+      "type": "Input.Toggle",
+      "title": "Vegetarian"
     }
   ],
   "actions": [

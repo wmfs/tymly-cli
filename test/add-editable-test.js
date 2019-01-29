@@ -20,10 +20,13 @@ describe('tymly add-editable', () => {
       helpers.down,
       'N',
       '',
+      '', // generated title
       '',
+      '', // use title from model
       'N',
       '',
-      ''
+      'Is it vegetarian?', // provide title
+      '' // take selected filename
     ],
     'set-file-name': [
       'Y',
