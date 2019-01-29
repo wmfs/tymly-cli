@@ -33,5 +33,10 @@
       "type": "Action.Submit",
       "title": "Submit"
     }
-  ]
+  ],
+  "tymlyScaffold": {
+    "generatedWith": "scaffold",
+    "generatedOn": "now",
+    "model": "pizza"
+  }
 }

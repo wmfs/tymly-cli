@@ -138,8 +138,8 @@ function compareFiles (expectedFile, outputFile, errors) {
     return
   }
 
-  const expected = fs.readFileSync(expectedFile, 'utf8')
-  const output = fs.readFileSync(outputFile, 'utf8')
+  const expected = loadFile(expectedFile)
+  const output = loadFile(outputFile)
 
   const diff = jsdiff.diffLines(expected, output)
   if (diff.length === 1) return
@@ -156,6 +156,15 @@ function compareFiles (expectedFile, outputFile, errors) {
 
   errors.push(error)
 } // compareFiles
+
+function loadFile (fileName) {
+  const file = fs.readFileSync(fileName, 'utf8')
+  const lines = file
+    .split('\n')
+    .filter(l => !l.match(/"generated(With|On)":/))
+    .join('\n')
+  return lines
+}
 
 function fileError (flag, value) {
   if (value === '\n') {
