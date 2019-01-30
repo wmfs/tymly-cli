@@ -1,3 +1,20 @@
+# [2.10.0](https://github.com/wmfs/tymly-cli/compare/v2.9.0...v2.10.0) (2019-01-30)
+
+
+### ✨ Features
+
+* Extend add-state-machine to solicit categories ([cbe2390](https://github.com/wmfs/tymly-cli/commit/cbe2390))
+
+
+### 🐛 Bug Fixes
+
+* **deps:** Pull in tymly-scaffold 1.10.0 ([91cc12d](https://github.com/wmfs/tymly-cli/commit/91cc12d))
+
+
+### 💎 Styles
+
+* Lint fix ([9fe55bd](https://github.com/wmfs/tymly-cli/commit/9fe55bd))
+
 # [2.9.0](https://github.com/wmfs/tymly-cli/compare/v2.8.0...v2.9.0) (2019-01-30)
 
 
