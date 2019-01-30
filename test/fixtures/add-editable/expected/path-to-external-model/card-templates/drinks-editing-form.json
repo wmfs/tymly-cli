@@ -44,9 +44,11 @@
       "title": "Submit"
     }
   ],
-  "tymlyScaffold": {
+  "meta": {
     "generatedWith": "scaffold",
     "generatedOn": "now",
-    "model": "drinks"
+    "data": {
+      "modelName": "drinks"
+    }
   }
 }
