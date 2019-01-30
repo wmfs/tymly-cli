@@ -1,6 +1,6 @@
 {
-  "Comment": "Edit a property address.",
-  "name": "Edit Address",
+  "Comment": "Edit pizza using pizza-editing-form form.",
+  "name": "Edit pizza",
   "version": "1.0",
   "categories": [
     "gazetteer"
