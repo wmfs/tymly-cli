@@ -7,14 +7,18 @@ const addStateMachine = require('../lib/actions').addStateMachine
 describe('tymly add-state-machine', () => {
   const tests = {
     'update': [
-      '',
-      '',
+      helpers.down,
       ''
     ],
     'two-forms-no-meta': [
-      '', // state machine
+      helpers.down, // state machine
       helpers.down, // choose form
-      helpers.down // choose model
+      helpers.down, // choose model
+      ''
+    ],
+    'set-file-name': [
+      helpers.down,
+      'futz-around-with-pizza'
     ]
   }
 

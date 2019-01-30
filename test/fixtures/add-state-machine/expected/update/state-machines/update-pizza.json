@@ -3,7 +3,6 @@
   "name": "Edit pizza",
   "version": "1.0",
   "categories": [
-    "gazetteer"
   ],
   "StartAt": "FindingById",
   "States": {
