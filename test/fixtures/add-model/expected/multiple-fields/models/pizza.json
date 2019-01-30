@@ -5,6 +5,7 @@
   "type": "object",
   "properties": {
     "code": {
+      "title": "Code",
       "type": "string"
     },
     "label": {
@@ -12,9 +13,11 @@
       "type": "string"
     },
     "popularitySeq": {
+      "title": "Popularity seq",
       "type": "integer"
     },
     "vegetarian": {
+      "title": "Vegetarian",
       "type": "boolean"
     }
   },
