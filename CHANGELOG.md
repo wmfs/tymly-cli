@@ -1,3 +1,32 @@
+# [2.7.0](https://github.com/wmfs/tymly-cli/compare/v2.6.1...v2.7.0) (2019-01-30)
+
+
+### ✨ Features
+
+* Add-Editable solicits edit field title ([195d0d2](https://github.com/wmfs/tymly-cli/commit/195d0d2))
+* add-state-machine solicits form to use with the machine ([fe78d26](https://github.com/wmfs/tymly-cli/commit/fe78d26))
+* add-state-machine solicits the model to scaffold against ([6f7d957](https://github.com/wmfs/tymly-cli/commit/6f7d957))
+* add-state-machines list available state machines ([b7e4bff](https://github.com/wmfs/tymly-cli/commit/b7e4bff))
+
+
+### 📦 Code Refactoring
+
+* Move ask into actions directory ([7dfc4dc](https://github.com/wmfs/tymly-cli/commit/7dfc4dc))
+* Move validators into action subdirectory ([0e082db](https://github.com/wmfs/tymly-cli/commit/0e082db))
+
+
+### 🚨 Tests
+
+* **deps:** Update add-editable tests for tymlyScaffold element ([224a1a4](https://github.com/wmfs/tymly-cli/commit/224a1a4))
+* add-state-machine passed ([5c7a633](https://github.com/wmfs/tymly-cli/commit/5c7a633))
+* add-state-machine test ([6af055f](https://github.com/wmfs/tymly-cli/commit/6af055f))
+* Stop existing user profile from interfering with the tests ([c0b17d6](https://github.com/wmfs/tymly-cli/commit/c0b17d6))
+
+
+### ♻️ Chores
+
+* **deps:** Bump [@wmfs](https://github.com/wmfs)/tymly-scaffold to get makeStateMachine ([793d9b7](https://github.com/wmfs/tymly-cli/commit/793d9b7))
+
 ## [2.6.1](https://github.com/wmfs/tymly-cli/compare/v2.6.0...v2.6.1) (2019-01-28)
 
 
