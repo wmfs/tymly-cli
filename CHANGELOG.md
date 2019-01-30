@@ -1,3 +1,22 @@
+# [2.8.0](https://github.com/wmfs/tymly-cli/compare/v2.7.0...v2.8.0) (2019-01-30)
+
+
+### ✨ Features
+
+* add-model provide default property titles ([7259ef4](https://github.com/wmfs/tymly-cli/commit/7259ef4))
+* add-state-machine solicits filename ([f6efaa2](https://github.com/wmfs/tymly-cli/commit/f6efaa2))
+* Use meta.data field instead of tymly-scaffold ([0a6b8d3](https://github.com/wmfs/tymly-cli/commit/0a6b8d3))
+
+
+### 🐛 Bug Fixes
+
+* **deps:** Pull tymly-scaffold 1.8.1 ([846c9eb](https://github.com/wmfs/tymly-cli/commit/846c9eb))
+
+
+### 🚨 Tests
+
+* Additional state-machine tests ([f88914c](https://github.com/wmfs/tymly-cli/commit/f88914c))
+
 # [2.7.0](https://github.com/wmfs/tymly-cli/compare/v2.6.1...v2.7.0) (2019-01-30)
 
 
