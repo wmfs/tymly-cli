@@ -1,0 +1,49 @@
+{
+  "Comment": "Edit a property address.",
+  "name": "Edit Address",
+  "version": "1.0",
+  "categories": [
+    "gazetteer"
+  ],
+  "StartAt": "FindingById",
+  "States": {
+    "FindingById": {
+      "Type": "Task",
+      "InputPath": "$",
+      "Resource": "module:findingById",
+      "ResourceConfig": {
+        "modelId": "pizza"
+      },
+      "ResultPath": "$.formData",
+      "Next": "AwaitingHumanInput"
+    },
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "form",
+        "uiName": "wmfs_pizzaEditingForm",
+        "dataPath": "$.formData"
+      },
+      "ResultPath": "$.formData",
+      "Next": "Upserting"
+    },
+    "Upserting": {
+      "Type": "Task",
+      "InputPath": "$.formData",
+      "Resource": "module:upserting",
+      "ResourceConfig": {
+        "modelId": "pizza"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
