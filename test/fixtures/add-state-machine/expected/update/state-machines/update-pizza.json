@@ -3,6 +3,7 @@
   "name": "Edit pizza",
   "version": "1.0",
   "categories": [
+    "pizza"
   ],
   "StartAt": "FindingById",
   "States": {
