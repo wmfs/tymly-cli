@@ -1,3 +1,10 @@
+# [2.9.0](https://github.com/wmfs/tymly-cli/compare/v2.8.0...v2.9.0) (2019-01-30)
+
+
+### ✨ Features
+
+* add-category command ([8b38e46](https://github.com/wmfs/tymly-cli/commit/8b38e46))
+
 # [2.8.0](https://github.com/wmfs/tymly-cli/compare/v2.7.0...v2.8.0) (2019-01-30)
 
 
