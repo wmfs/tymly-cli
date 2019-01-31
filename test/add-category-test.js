@@ -10,6 +10,11 @@ describe('tymly add-category', () => {
       'pizza',
       '',
       ''
+    ],
+    'fill-out-category': [
+      'pizza',
+      'Yummy Pizza',
+      'Everything pizzas'
     ]
   }
 

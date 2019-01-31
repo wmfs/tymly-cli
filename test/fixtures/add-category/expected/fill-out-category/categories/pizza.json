@@ -1,0 +1,8 @@
+{
+  "label": "Yummy Pizza",
+  "description": "Everything pizzas",
+  "style": {
+    "icon": "pizza",
+    "backgroundColor": "#008800"
+  }
+}
