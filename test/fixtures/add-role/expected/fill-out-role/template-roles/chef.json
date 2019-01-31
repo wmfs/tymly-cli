@@ -1,6 +1,8 @@
 {
   "label": "The Pizza Chef",
   "description": "Someone who makes pizzas",
-  "roleMemberships": [],
+  "roleMemberships": [
+
+  ],
   "grants": []
 }

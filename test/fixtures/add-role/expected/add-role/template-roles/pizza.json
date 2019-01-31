@@ -1,6 +1,7 @@
 {
   "label": "Pizza",
   "description": "Pizza",
-  "roleMemberships": [],
+  "roleMemberships": [
+  ],
   "grants": []
 }

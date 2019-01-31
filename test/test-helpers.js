@@ -162,6 +162,7 @@ function loadFile (fileName) {
   const lines = file
     .split('\n')
     .filter(l => !l.match(/"generated(With|On)":/))
+    .filter(l => !!l.trim())
     .join('\n')
   return lines
 }
