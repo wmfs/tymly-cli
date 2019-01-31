@@ -1,0 +1,6 @@
+{
+  "label": "The Pizza Maestro",
+  "description": "Someone who makes master pizzas",
+  "roleMemberships": ["chef"],
+  "grants": []
+}
