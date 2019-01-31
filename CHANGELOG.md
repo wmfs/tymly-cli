@@ -1,3 +1,17 @@
+# [2.11.0](https://github.com/wmfs/tymly-cli/compare/v2.10.0...v2.11.0) (2019-01-31)
+
+
+### ✨ Features
+
+* Complete add-role ([c3ed084](https://github.com/wmfs/tymly-cli/commit/c3ed084))
+* Filling out add-role. ([34865c1](https://github.com/wmfs/tymly-cli/commit/34865c1))
+
+
+### 🚨 Tests
+
+* add-role tests ([6439829](https://github.com/wmfs/tymly-cli/commit/6439829))
+* Extra add-category test ([c107a72](https://github.com/wmfs/tymly-cli/commit/c107a72))
+
 # [2.10.0](https://github.com/wmfs/tymly-cli/compare/v2.9.0...v2.10.0) (2019-01-30)
 
 
