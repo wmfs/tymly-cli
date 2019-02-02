@@ -1,0 +1,8 @@
+{
+  "label": "Drinks",
+  "description": "Thirst quenching drinks",
+  "style": {
+    "icon": "drinks",
+    "backgroundColor": "#008800"
+  }
+}
