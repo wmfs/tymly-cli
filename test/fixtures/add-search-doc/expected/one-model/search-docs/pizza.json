@@ -1,14 +1,14 @@
 {
   "modelId": "pizza",
   "attributeMapping": {
-    "id": "'pizza#'::text ||code::text",
+    "id": "'pizza#'::text || code::text",
     "docId": "code::text",
     "domain": "'search'::text",
     "docType": "'wmfs_pizza'::text",
     "title": "label::text",
     "description": "label::text",
     "additionalTerms": "NULL::text[]",
-    "category": "NULL::text",
+    "category": "'pizza'::text",
     "eventTimestamp": "NULL::timestamp with time zone",
     "point": "NULL::text",
     "activeEvent": "false::boolean",
@@ -19,7 +19,7 @@
     "language": "'ENG'::text",
     "rootAncestorId": "NULL::text",
     "sortString": "label::text",
-    "launches": "'{\"launches\":[{\"input\": {\"boardKeys\": {\"code\": '||code||'}}, \"stateMachineName\": \"wmfs_updatePizza_1_0\", \"title\": \"View\"}]}'::text",
+    "launches": "NULL::text",
     "created": "_created::timestamp with time zone",
     "modified": "_modified::timestamp with time zone"
   }

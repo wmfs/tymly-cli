@@ -9,9 +9,10 @@ describe('tymly add-search-doc', () => {
     'one-model': [
       helpers.down, // label -> choose label
       helpers.down + ' ', // description -> select label
-      '', // addition fields -> select none of them
-      helpers.down, // sortBy -> choose label
-      'View', // state machine preselected, so this is the launches label
+      // '', // addition fields -> select none of them
+      'pizza', // categories - manual entry
+      // 'View', // state machine preselected, so this is the launches label
+      '' // accept default filename
     ]
     // two models,
     // multiple everything
