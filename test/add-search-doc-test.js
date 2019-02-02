@@ -6,7 +6,7 @@ const addSearchDoc = require('../lib/actions').addSearchDoc
 
 describe('tymly add-search-doc', () => {
   const tests = {
-    'add-search': [
+    'one-model': [
       helpers.down, // label -> choose label
       helpers.down + ' ', // description -> select label
       '', // addition fields -> select none of them
