@@ -1,0 +1,26 @@
+{
+  "modelId": "pizza",
+  "attributeMapping": {
+    "id": "'pizza#'::text || code::text",
+    "docId": "code::text",
+    "domain": "'search'::text",
+    "docType": "'wmfs_pizza'::text",
+    "title": "label::text",
+    "description": "code::text || ' ' || label::text",
+    "additionalTerms": "NULL::text[]",
+    "category": "'pizza'::text",
+    "eventTimestamp": "NULL::timestamp with time zone",
+    "point": "NULL::text",
+    "activeEvent": "false::boolean",
+    "author": "'pizza'::text",
+    "teams": "NULL::text[]",
+    "roles": "'{\"$everyone\"}'::text[]",
+    "tags": "NULL::text[]",
+    "language": "'ENG'::text",
+    "rootAncestorId": "NULL::text",
+    "sortString": "label::text",
+    "launches": "NULL::text",
+    "created": "_created::timestamp with time zone",
+    "modified": "_modified::timestamp with time zone"
+  }
+}

@@ -13,9 +13,27 @@ describe('tymly add-search-doc', () => {
       'pizza', // categories - manual entry
       // 'View', // state machine preselected, so this is the launches label
       '' // accept default filename
+    ],
+    'two-models': [
+      helpers.down, // model -> choose pizza
+      helpers.down, // label -> choose label
+      helpers.down + ' ', // description -> select label
+      // '', // addition fields -> select none of them
+      'pizza', // categories - manual entry
+      // 'View', // state machine preselected, so this is the launches label
+      '' // accept default filename
+    ],
+    'multiple-everything': [
+      helpers.down, // model -> choose pizza
+      helpers.down, // label -> choose label
+      ' ' + helpers.down + ' ', // description -> code and label
+      // '', // addition fields -> select none of them
+      helpers.down, // categories - select pizza
+      helpers.down, // select view state machine
+      'View',
+      'yes-boys' // accept default filename
     ]
-    // two models,
-    // multiple everything
+
   }
 
   const suiteName = 'add-search-doc'
