@@ -1,3 +1,21 @@
+# [2.12.0](https://github.com/wmfs/tymly-cli/compare/v2.11.0...v2.12.0) (2019-02-02)
+
+
+### ✨ Features
+
+* add-search-doc first pass ([2d1686b](https://github.com/wmfs/tymly-cli/commit/2d1686b))
+
+
+### 📦 Code Refactoring
+
+* Moving towards add-search-docs ([c32d850](https://github.com/wmfs/tymly-cli/commit/c32d850))
+
+
+### 🚨 Tests
+
+* Do nothing add-search-doc stub ([dec781f](https://github.com/wmfs/tymly-cli/commit/dec781f))
+* First tests for add-search-doc ([5717bea](https://github.com/wmfs/tymly-cli/commit/5717bea))
+
 # [2.11.0](https://github.com/wmfs/tymly-cli/compare/v2.10.0...v2.11.0) (2019-01-31)
 
 
