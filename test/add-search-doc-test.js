@@ -11,6 +11,7 @@ describe('tymly add-search-doc', () => {
       helpers.down + ' ', // description -> select label
       // '', // addition fields -> select none of them
       'pizza', // categories - manual entry
+      '', // roles - manual entry, accept default
       // 'View', // state machine preselected, so this is the launches label
       '' // accept default filename
     ],
@@ -19,7 +20,8 @@ describe('tymly add-search-doc', () => {
       helpers.down, // label -> choose label
       helpers.down + ' ', // description -> select label
       // '', // addition fields -> select none of them
-      'pizza', // categories - manual entry
+      '$everyone', // categories - manual entry
+      '', // roles - manual entry, accept default
       // 'View', // state machine preselected, so this is the launches label
       '' // accept default filename
     ],
@@ -29,6 +31,7 @@ describe('tymly add-search-doc', () => {
       ' ' + helpers.down + ' ', // description -> code and label
       // '', // addition fields -> select none of them
       helpers.down, // categories - select pizza
+      helpers.down + helpers.down + ' ' + helpers.down + ' ', // roles - select chef and customer
       helpers.down, // select view state machine
       'View',
       'yes-boys' // accept default filename
