@@ -1,3 +1,10 @@
+## [2.13.1](https://github.com/wmfs/tymly-cli/compare/v2.13.0...v2.13.1) (2019-02-06)
+
+
+### 🐛 Bug Fixes
+
+* Fixes to add-search-doc generation ([4da83d8](https://github.com/wmfs/tymly-cli/commit/4da83d8))
+
 # [2.13.0](https://github.com/wmfs/tymly-cli/compare/v2.12.1...v2.13.0) (2019-02-06)
 
 
