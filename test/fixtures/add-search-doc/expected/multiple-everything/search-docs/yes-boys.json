@@ -19,7 +19,7 @@
     "language": "'ENG'::text",
     "rootAncestorId": "NULL::text",
     "sortString": "label::text",
-    "launches": "NULL::text",
+    "launches": "'{\"launches\":[{\"input\":{\"code\":'||code||'},\"stateMachineName\":\"wmfs_viewPizza_1_0\",\"title\":\"View\"}]}'::text",
     "created": "_created::timestamp with time zone",
     "modified": "_modified::timestamp with time zone"
   }

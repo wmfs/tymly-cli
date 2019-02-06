@@ -12,7 +12,7 @@ describe('tymly add-search-doc', () => {
       // '', // addition fields -> select none of them
       'pizza', // categories - manual entry
       '', // roles - manual entry, accept default
-      // 'View', // state machine preselected, so this is the launches label
+      '', // launches preselected
       '' // accept default filename
     ],
     'two-models': [
@@ -20,9 +20,9 @@ describe('tymly add-search-doc', () => {
       helpers.down, // label -> choose label
       helpers.down + ' ', // description -> select label
       // '', // addition fields -> select none of them
-      '$everyone', // categories - manual entry
+      // '', // one category, autoselected
       '', // roles - manual entry, accept default
-      // 'View', // state machine preselected, so this is the launches label
+      'y', // state machine preselected, confirm
       '' // accept default filename
     ],
     'multiple-everything': [
@@ -32,8 +32,9 @@ describe('tymly add-search-doc', () => {
       // '', // addition fields -> select none of them
       helpers.down, // categories - select pizza
       helpers.down + helpers.down + ' ' + helpers.down + ' ', // roles - select chef and customer
-      helpers.down, // select view state machine
       'View',
+      helpers.down, // select view state machine
+      '',
       'yes-boys' // accept default filename
     ]
 
