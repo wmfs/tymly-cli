@@ -1,3 +1,16 @@
+# [2.13.0](https://github.com/wmfs/tymly-cli/compare/v2.12.1...v2.13.0) (2019-02-06)
+
+
+### ✨ Features
+
+* Add blueprint.stateMachines() method ([a0f59f9](https://github.com/wmfs/tymly-cli/commit/a0f59f9))
+* addSearchDoc solicits launch information ([b7aa88d](https://github.com/wmfs/tymly-cli/commit/b7aa88d))
+
+
+### 💎 Styles
+
+* Remove unused require() ([c2930ec](https://github.com/wmfs/tymly-cli/commit/c2930ec))
+
 ## [2.12.1](https://github.com/wmfs/tymly-cli/compare/v2.12.0...v2.12.1) (2019-02-06)
 
 
