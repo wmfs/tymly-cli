@@ -1,3 +1,16 @@
+## [2.12.1](https://github.com/wmfs/tymly-cli/compare/v2.12.0...v2.12.1) (2019-02-06)
+
+
+### 🐛 Bug Fixes
+
+* add-search-docs choose roles for doc ([324564d](https://github.com/wmfs/tymly-cli/commit/324564d))
+
+
+### 🚨 Tests
+
+* add-search-doc test for multiple description fields ([17f6e42](https://github.com/wmfs/tymly-cli/commit/17f6e42))
+* Update tests for role restrictions ([4c1ac4d](https://github.com/wmfs/tymly-cli/commit/4c1ac4d))
+
 # [2.12.0](https://github.com/wmfs/tymly-cli/compare/v2.11.0...v2.12.0) (2019-02-02)
 
 
