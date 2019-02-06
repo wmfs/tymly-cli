@@ -14,12 +14,12 @@
     "activeEvent": "false::boolean",
     "author": "'pizza'::text",
     "teams": "NULL::text[]",
-    "roles": "'{\"$everyone\"}'::text[]",
+    "roles": "'{\"$authenticated\"}'::text[]",
     "tags": "NULL::text[]",
     "language": "'ENG'::text",
     "rootAncestorId": "NULL::text",
     "sortString": "label::text",
-    "launches": "'{\"launches\":[{\"input\":{\"code\":'||code||'},\"stateMachineName\":\"wmfs_updatePizza_1_0\",\"title\":\"Open\"}]}'::text",
+    "launches": "'{\"launches\":[{\"input\":{\"code\":\"'||code||'\"},\"stateMachineName\":\"wmfs_updatePizza_1_0\",\"title\":\"Open\"}]}'::text",
     "created": "_created::timestamp with time zone",
     "modified": "_modified::timestamp with time zone"
   }

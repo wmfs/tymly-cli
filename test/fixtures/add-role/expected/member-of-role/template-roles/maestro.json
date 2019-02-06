@@ -2,7 +2,7 @@
   "label": "The Pizza Maestro",
   "description": "Someone who makes master pizzas",
   "roleMemberships": [
-    "chef"
+    "wmfs_chef"
   ],
   "grants": []
 }
