@@ -8,16 +8,19 @@ describe('tymly add-state-machine', () => {
   const tests = {
     'update': [
       helpers.down,
+      '', // default role
       ''
     ],
     'two-forms-no-meta': [
       helpers.down + helpers.down, // state machine
       helpers.down, // choose form
       helpers.down, // choose model
+      '', // default role
       ''
     ],
     'set-file-name': [
       helpers.down,
+      '', // default role
       'futz-around-with-pizza'
     ]
   }
