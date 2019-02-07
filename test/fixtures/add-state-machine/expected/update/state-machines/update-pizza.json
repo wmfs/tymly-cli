@@ -1,6 +1,6 @@
 {
-  "Comment": "Edit pizza using pizza-editing-form form.",
-  "name": "Edit pizza",
+  "Comment": "Update pizza using pizza-editing-form form.",
+  "name": "Update pizza",
   "version": "1.0",
   "categories": [
     "pizza"

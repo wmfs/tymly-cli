@@ -8,6 +8,8 @@ describe('tymly add-state-machine', () => {
   const tests = {
     'update': [
       helpers.down,
+      '', // default title
+      '', // default description
       '', // default role
       ''
     ],
@@ -15,12 +17,16 @@ describe('tymly add-state-machine', () => {
       helpers.down + helpers.down, // state machine
       helpers.down, // choose form
       helpers.down, // choose model
+      '', // default title
+      '', // default description
       '', // default role
       ''
     ],
     'set-file-name': [
       helpers.down,
-      '', // default role
+      '', // default title
+      'Pizza for everyone!',
+      ' ', // $everyone role
       'futz-around-with-pizza'
     ]
   }

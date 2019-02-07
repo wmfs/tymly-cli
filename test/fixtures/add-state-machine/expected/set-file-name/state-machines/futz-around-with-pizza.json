@@ -1,6 +1,6 @@
 {
-  "Comment": "Edit pizza using pizza-editing-form form.",
-  "name": "Edit pizza",
+  "Comment": "Pizza for everyone!",
+  "name": "Update pizza",
   "version": "1.0",
   "categories": [
     "pizza"
@@ -40,7 +40,7 @@
   },
   "restrictions": [
     {
-      "roleId": "$authenticated",
+      "roleId": "$everyone",
       "allows": [
         "*"
       ]
