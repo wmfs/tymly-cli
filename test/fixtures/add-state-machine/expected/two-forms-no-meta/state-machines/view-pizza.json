@@ -25,16 +25,6 @@
         "uiName": "wmfs_pizzaEditingForm",
         "dataPath": "$.formData"
       },
-      "ResultPath": "$.formData",
-      "Next": "Upserting"
-    },
-    "Upserting": {
-      "Type": "Task",
-      "InputPath": "$.formData",
-      "Resource": "module:upserting",
-      "ResourceConfig": {
-        "modelId": "pizza"
-      },
       "End": true
     }
   },
