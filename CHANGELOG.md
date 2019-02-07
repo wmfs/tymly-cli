@@ -1,3 +1,10 @@
+# [2.15.0](https://github.com/wmfs/tymly-cli/compare/v2.14.0...v2.15.0) (2019-02-07)
+
+
+### ✨ Features
+
+* **deps:** Pull in tymly-scaffold 1.15.0 to get view state-machine ([e430467](https://github.com/wmfs/tymly-cli/commit/e430467))
+
 # [2.14.0](https://github.com/wmfs/tymly-cli/compare/v2.13.1...v2.14.0) (2019-02-07)
 
 
