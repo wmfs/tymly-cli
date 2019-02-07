@@ -1,3 +1,20 @@
+# [2.14.0](https://github.com/wmfs/tymly-cli/compare/v2.13.1...v2.14.0) (2019-02-07)
+
+
+### ✨ Features
+
+* addViewable implementation ([1b381f1](https://github.com/wmfs/tymly-cli/commit/1b381f1))
+
+
+### 📦 Code Refactoring
+
+* Bring addViewable & addEditable together ([67926e0](https://github.com/wmfs/tymly-cli/commit/67926e0))
+
+
+### 🚨 Tests
+
+* addViewable tests ([42f1698](https://github.com/wmfs/tymly-cli/commit/42f1698))
+
 ## [2.13.1](https://github.com/wmfs/tymly-cli/compare/v2.13.0...v2.13.1) (2019-02-06)
 
 
