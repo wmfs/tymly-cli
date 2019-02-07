@@ -14,7 +14,7 @@
     "activeEvent": "false::boolean",
     "author": "'pizza'::text",
     "teams": "NULL::text[]",
-    "roles": "'{\"$authenticated\"}'::text[]",
+    "roles": "'{\"$everyone\"}'::text[]",
     "tags": "NULL::text[]",
     "language": "'ENG'::text",
     "rootAncestorId": "NULL::text",
