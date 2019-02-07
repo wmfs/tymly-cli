@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Pizza",
+  "description": "A pizza",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string"
+    },
+    "label": {
+      "title": "Customer-facing label",
+      "type": "string"
+    },
+    "popularitySeq": {
+      "type": "integer"
+    },
+    "vegetarian": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "code",
+    "label"
+  ],
+  "primaryKey": [
+    "code"
+  ]
+}
