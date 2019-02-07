@@ -1,3 +1,16 @@
+# [2.16.0](https://github.com/wmfs/tymly-cli/compare/v2.15.0...v2.16.0) (2019-02-07)
+
+
+### ✨ Features
+
+* Solicit label and description for state machines ([accfd44](https://github.com/wmfs/tymly-cli/commit/accfd44))
+* Solicit roles in addStateMachine ([ba16235](https://github.com/wmfs/tymly-cli/commit/ba16235))
+
+
+### 🐛 Bug Fixes
+
+* Fix chooseRole so it respects the suggestion ([4cab3bc](https://github.com/wmfs/tymly-cli/commit/4cab3bc))
+
 # [2.15.0](https://github.com/wmfs/tymly-cli/compare/v2.14.0...v2.15.0) (2019-02-07)
 
 
