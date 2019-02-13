@@ -6,5 +6,11 @@
   "organisation": "The Trousers",
   "author": "Jane Doe",
   "description": "For ordering delicious pizza",
-  "categories": []
+  "categories": [],
+  "meta": {
+    "domains": [
+      "general",
+      "people"
+    ]
+  }
 }
