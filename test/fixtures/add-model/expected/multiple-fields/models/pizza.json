@@ -5,20 +5,20 @@
   "type": "object",
   "properties": {
     "code": {
-      "title": "Code",
-      "type": "string"
+      "type": "string",
+      "title": "Code"
     },
     "label": {
-      "title": "Customer-facing label",
-      "type": "string"
+      "type": "string",
+      "title": "Customer-facing label"
     },
     "popularitySeq": {
-      "title": "Popularity seq",
-      "type": "integer"
+      "type": "integer",
+      "title": "Popularity seq"
     },
     "vegetarian": {
-      "title": "Vegetarian",
-      "type": "boolean"
+      "type": "boolean",
+      "title": "Vegetarian"
     }
   },
   "required": [
