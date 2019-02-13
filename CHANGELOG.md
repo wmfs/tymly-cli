@@ -1,3 +1,15 @@
+# [2.17.0](https://github.com/wmfs/tymly-cli/compare/v2.16.0...v2.17.0) (2019-02-13)
+
+
+### ✨ Features
+
+* Bring add-model UI into line with other add-* commands.  Request name rather than requiring on ([5b1d9f2](https://github.com/wmfs/tymly-cli/commit/5b1d9f2))
+
+
+### 🐛 Bug Fixes
+
+* Bump tymly-scaffold to 1.7.2. Correct tests to match ([de5f0c8](https://github.com/wmfs/tymly-cli/commit/de5f0c8))
+
 # [2.16.0](https://github.com/wmfs/tymly-cli/compare/v2.15.0...v2.16.0) (2019-02-07)
 
 
