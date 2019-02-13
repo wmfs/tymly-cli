@@ -16,6 +16,11 @@ const homedir = require('os').homedir()
 const userProfilePath = path.join(homedir, '.tymly', 'tymly-profile.json')
 const dinkedUserProfilePath = `${userProfilePath}.dink`
 
+process.on('unhandledRejection', error => {
+  console.error('unhandledRejection', error.message)
+  console.error(error.stack.toString())
+})
+
 function prepareFixture (testSuiteName) {
   const { initialPath, outputPath } = fixturePath(testSuiteName)
 
@@ -36,7 +41,7 @@ function prepareFixture (testSuiteName) {
 function runTest (suiteName, testName, inputs, actionFn, ...args) {
   it(testName, async () => {
     dinkUserProfile()
-    stdMocks.use()
+    stdMocks.use({ stderr: false })
 
     const { outputPath, profilePath = 'nowhere' } = fixturePath(suiteName)
     const dirName = testName.replace(/ /g, '-')

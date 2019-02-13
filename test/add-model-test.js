@@ -51,7 +51,7 @@ describe('tymly add-model', () => {
       '',
       'vegetarian',
       '',
-      helpers.down + helpers.down,
+      helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down,
       '',
       '',
       ''
@@ -78,13 +78,11 @@ describe('tymly add-model', () => {
   })
 
   for (const [name, inputs] of Object.entries(tests)) {
-    const pizzaName = inputs.shift()
     helpers.runTest(
       suiteName,
       name,
       inputs,
       addModel,
-      pizzaName,
       { }
     )
   }
