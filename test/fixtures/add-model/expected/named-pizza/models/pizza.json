@@ -5,6 +5,7 @@
   "type": "object",
   "properties": {
     "name": {
+      "typeHint": "name",
       "type": "string",
       "title": "Name"
     }

@@ -5,18 +5,22 @@
   "type": "object",
   "properties": {
     "code": {
+      "typeHint": "text",
       "type": "string",
       "title": "Code"
     },
     "label": {
+      "typeHint": "text",
       "type": "string",
       "title": "Customer-facing label"
     },
     "popularitySeq": {
+      "typeHint": "integer",
       "type": "integer",
       "title": "Popularity seq"
     },
     "vegetarian": {
+      "typeHint": "boolean",
       "type": "boolean",
       "title": "Vegetarian"
     }

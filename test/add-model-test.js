@@ -12,6 +12,7 @@ describe('tymly add-model', () => {
     model description,
     field name,
     field title,
+    field category,
     field type,
     is primary key,
     is required,
@@ -26,7 +27,7 @@ describe('tymly add-model', () => {
       'name',
       '',
       '',
-      'string',
+      'name',
       'Y',
       'Y',
       ''
@@ -74,7 +75,6 @@ describe('tymly add-model', () => {
       'Y',
       ''
     ]
-
   }
 
   const suiteName = 'add-model'
