@@ -1,3 +1,10 @@
+# [2.21.0](https://github.com/wmfs/tymly-cli/compare/v2.20.0...v2.21.0) (2019-02-14)
+
+
+### ✨ Features
+
+* Start using typeHints when creating forms ([8b72a2e](https://github.com/wmfs/tymly-cli/commit/8b72a2e))
+
 # [2.20.0](https://github.com/wmfs/tymly-cli/compare/v2.19.0...v2.20.0) (2019-02-14)
 
 
