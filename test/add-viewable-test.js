@@ -9,16 +9,22 @@ const suiteName = 'add-viewable'
 describe(`tymly ${suiteName}`, () => {
   const tests = {
     'one-model': [
+      '', // generated form title
+      '', // generated form description
       'Y',
       ''
     ],
     'two-models': [
       helpers.down,
+      '', // generated form title
+      '', // generated form description
       'Y',
       ''
     ],
     'two-models-choose-fields': [
       helpers.down,
+      '', // generated form title
+      '', // generated form description
       'N',
       '',
       '', // generated title
@@ -30,6 +36,8 @@ describe(`tymly ${suiteName}`, () => {
       '' // take selected filename
     ],
     'set-file-name': [
+      '', // generated form title
+      '', // generated form description
       'Y',
       'the-pizza-form.json'
     ]

@@ -5,8 +5,8 @@
   "body": [
     {
       "type": "Jumbotron",
-      "title": "Pizza Editor",
-      "subtitle": "A form for editing a Pizza."
+      "title": "Pizza Viewer",
+      "subtitle": "A form for viewing a Pizza."
     },
     {
       "type": "FactSet",

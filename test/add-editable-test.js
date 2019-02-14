@@ -8,16 +8,22 @@ const addEditable = require('../lib/actions').addEditableAction
 describe('tymly add-editable', () => {
   const tests = {
     'one-model': [
+      '', // generated form title
+      '', // generated form description
       'Y',
       ''
     ],
     'two-models': [
       helpers.down,
+      '', // generated form title
+      '', // generated form description
       'Y',
       ''
     ],
     'two-models-choose-fields': [
       helpers.down,
+      'Simple Pizza!', // alternative title
+      'For your raaaaapid pizza data entry needs', // alternative description
       'N',
       '',
       '', // generated title
@@ -29,11 +35,15 @@ describe('tymly add-editable', () => {
       '' // take selected filename
     ],
     'set-file-name': [
+      '', // generated form title
+      '', // generated form description
       'Y',
       'the-pizza-form.json'
     ],
     'path-to-external-model': {
       user: [
+        '', // generated form title
+        '', // generated form description
         'Y',
         ''
       ],

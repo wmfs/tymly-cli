@@ -5,8 +5,8 @@
   "body": [
     {
       "type": "Jumbotron",
-      "title": "Pizza Editor",
-      "subtitle": "A form for editing a Pizza."
+      "title": "Simple Pizza!",
+      "subtitle": "For your raaaaapid pizza data entry needs"
     },
     {
       "id": "code",
