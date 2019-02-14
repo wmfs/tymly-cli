@@ -1,3 +1,17 @@
+# [2.22.0](https://github.com/wmfs/tymly-cli/compare/v2.21.0...v2.22.0) (2019-02-14)
+
+
+### ✨ Features
+
+* Pretty up model selection ([8b6fc1b](https://github.com/wmfs/tymly-cli/commit/8b6fc1b))
+* **choose-categories:** Prettied up category selection ([86b4b58](https://github.com/wmfs/tymly-cli/commit/86b4b58))
+* **choose-roles:** Prettied up role selection ([56d6124](https://github.com/wmfs/tymly-cli/commit/56d6124))
+
+
+### 🐛 Bug Fixes
+
+* **selectInternalModel:** simplify model selection ([cf582a7](https://github.com/wmfs/tymly-cli/commit/cf582a7))
+
 # [2.21.0](https://github.com/wmfs/tymly-cli/compare/v2.20.0...v2.21.0) (2019-02-14)
 
 
