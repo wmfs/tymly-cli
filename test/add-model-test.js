@@ -51,7 +51,7 @@ describe('tymly add-model', () => {
       '',
       'vegetarian',
       '',
-      helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down + helpers.down,
+      'bool',
       '',
       '',
       ''
