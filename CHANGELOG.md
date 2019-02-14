@@ -1,3 +1,25 @@
+# [2.18.0](https://github.com/wmfs/tymly-cli/compare/v2.17.0...v2.18.0) (2019-02-13)
+
+
+### ✨ Features
+
+* new-blueprint solicits data-domains ([03a000d](https://github.com/wmfs/tymly-cli/commit/03a000d))
+
+
+### 🐛 Bug Fixes
+
+* Cosmetic new-blueprint changes ([22c787c](https://github.com/wmfs/tymly-cli/commit/22c787c))
+
+
+### 🛠 Builds
+
+* **deps:** Bump tymly-scaffold to 1.18.0 ([d5bc394](https://github.com/wmfs/tymly-cli/commit/d5bc394))
+
+
+### 💎 Styles
+
+* lint fixes ([1c1a0f7](https://github.com/wmfs/tymly-cli/commit/1c1a0f7))
+
 # [2.17.0](https://github.com/wmfs/tymly-cli/compare/v2.16.0...v2.17.0) (2019-02-13)
 
 
