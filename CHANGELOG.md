@@ -1,3 +1,22 @@
+# [2.19.0](https://github.com/wmfs/tymly-cli/compare/v2.18.0...v2.19.0) (2019-02-14)
+
+
+### ✨ Features
+
+* Filter available data type by blueprint domain. Present richer datatype list to users. ([ee964b2](https://github.com/wmfs/tymly-cli/commit/ee964b2))
+* Swap all selects and multiselects to autocomplete ([136f36a](https://github.com/wmfs/tymly-cli/commit/136f36a))
+* **add-model:** Ask data category ahead of asking data type ([a029098](https://github.com/wmfs/tymly-cli/commit/a029098))
+
+
+### 🛠 Builds
+
+* **deps:** Bump to tymly-scaffold 1.20.0 ([1d509df](https://github.com/wmfs/tymly-cli/commit/1d509df))
+
+
+### 📦 Code Refactoring
+
+* **add-model:** Rejig how properties are solicited ([f6b9b75](https://github.com/wmfs/tymly-cli/commit/f6b9b75))
+
 # [2.18.0](https://github.com/wmfs/tymly-cli/compare/v2.17.0...v2.18.0) (2019-02-13)
 
 
