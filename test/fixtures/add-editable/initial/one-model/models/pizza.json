@@ -15,7 +15,8 @@
       "type": "integer"
     },
     "vegetarian": {
-      "type": "boolean"
+      "typeHint": "yesNo",
+      "type": "string"
     }
   },
   "required": [
