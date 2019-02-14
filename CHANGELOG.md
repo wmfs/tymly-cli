@@ -1,3 +1,10 @@
+# [2.20.0](https://github.com/wmfs/tymly-cli/compare/v2.19.0...v2.20.0) (2019-02-14)
+
+
+### ✨ Features
+
+* **deps:** Pull in tymly-scaffold 1.21.0 so that models include typeHints ([07afad3](https://github.com/wmfs/tymly-cli/commit/07afad3))
+
 # [2.19.0](https://github.com/wmfs/tymly-cli/compare/v2.18.0...v2.19.0) (2019-02-14)
 
 
