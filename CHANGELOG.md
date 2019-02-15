@@ -1,3 +1,15 @@
+# [2.23.0](https://github.com/wmfs/tymly-cli/compare/v2.22.0...v2.23.0) (2019-02-15)
+
+
+### ✨ Features
+
+* **add-form:** Solicit form title and subtitle ([654c1f9](https://github.com/wmfs/tymly-cli/commit/654c1f9))
+
+
+### 🐛 Bug Fixes
+
+* **selectInternalModel:** Display selected model name properly once selected ([2a8e773](https://github.com/wmfs/tymly-cli/commit/2a8e773))
+
 # [2.22.0](https://github.com/wmfs/tymly-cli/compare/v2.21.0...v2.22.0) (2019-02-14)
 
 
