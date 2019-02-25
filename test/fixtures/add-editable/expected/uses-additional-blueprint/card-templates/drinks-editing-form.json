@@ -1,0 +1,54 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0",
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Jumbotron",
+      "title": "Drinks Editor",
+      "subtitle": "A form for editing a Drinks."
+    },
+    {
+      "id": "code",
+      "type": "Input.Text",
+      "title": "Code"
+    },
+    {
+      "id": "label",
+      "type": "Input.Text",
+      "title": "Customer-facing label"
+    },
+    {
+      "id": "fizzy",
+      "type": "Input.Toggle",
+      "title": "Is it fizzy?"
+    },
+    {
+      "id": "alcoholic",
+      "type": "Input.Toggle",
+      "title": "Is it alcoholic?"
+    },
+    {
+      "id": "gluten-free",
+      "type": "Input.Toggle",
+      "title": "Suitable for celiacs?"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Cancel",
+      "title": "Cancel"
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Submit"
+    }
+  ],
+  "meta": {
+    "generatedWith": "scaffold",
+    "generatedOn": "now",
+    "data": {
+      "modelName": "drinks"
+    }
+  }
+}

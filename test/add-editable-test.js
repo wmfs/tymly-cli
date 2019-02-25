@@ -50,7 +50,14 @@ describe('tymly add-editable', () => {
       options: {
         'modelPath': path.join(__dirname, 'fixtures/additional-blueprint/models/drinks.json')
       }
-    }
+    },
+    'uses-additional-blueprint': [
+      helpers.down + helpers.down,
+      '', // generated form title
+      '', // generated form description
+      'Y',
+      ''
+    ]
   }
 
   const suiteName = 'add-editable'

@@ -5,6 +5,7 @@ chai.use(require('dirty-chai'))
 const expect = chai.expect
 
 const path = require('path')
+const stdMocks = require('std-mocks')
 
 const helpers = require('./test-helpers')
 
@@ -18,7 +19,7 @@ describe('tymly new-blueprint', () => {
     outputPath = helpers.prepareFixture(suiteName)
   })
 
-  it('does nothing if no blueprint name provided', async () => {
+  it('do nothing if no blueprint name provided', async () => {
     const dirName = path.join(outputPath, 'do-nothing')
 
     await newBlueprint('   ', { })
@@ -153,4 +154,13 @@ describe('tymly new-blueprint', () => {
     }
   )
 
+  it('do nothing if --use path is not a blueprint', async () => {
+    const dirName = path.join(outputPath, 'do-nothing')
+
+    stdMocks.use({ stderr: false })
+    await newBlueprint('tymly-trousers-blueprint', { use: './freddo' })
+    stdMocks.restore()
+
+    expect(helpers.doesNotExist(dirName)).to.be.true()
+  })
 })
