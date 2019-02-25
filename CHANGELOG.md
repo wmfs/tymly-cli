@@ -1,3 +1,22 @@
+# [2.24.0](https://github.com/wmfs/tymly-cli/compare/v2.23.0...v2.24.0) (2019-02-25)
+
+
+### ✨ Features
+
+* Add new-blueprint --use option to specify another blueprint this one is going to use as a base ([de0ac85](https://github.com/wmfs/tymly-cli/commit/de0ac85))
+* Annotated categories, roles, state-machines, etc with name of blueprint they came from ([ef2719b](https://github.com/wmfs/tymly-cli/commit/ef2719b))
+* If blueprint uses another, load it and uses its models ([d1ea82e](https://github.com/wmfs/tymly-cli/commit/d1ea82e))
+
+
+### 🐛 Bug Fixes
+
+* Correct add-search-doc tests now we have rating ([e901487](https://github.com/wmfs/tymly-cli/commit/e901487))
+
+
+### 💎 Styles
+
+* Lint fixes ([2d3909a](https://github.com/wmfs/tymly-cli/commit/2d3909a))
+
 # [2.23.0](https://github.com/wmfs/tymly-cli/compare/v2.22.0...v2.23.0) (2019-02-15)
 
 
