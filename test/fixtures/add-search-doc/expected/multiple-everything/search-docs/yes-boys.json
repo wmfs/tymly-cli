@@ -14,6 +14,7 @@
     "activeEvent": "false::boolean",
     "author": "'pizza'::text",
     "teams": "NULL::text[]",
+    "rating": "NULL::text",
     "roles": "'{\"wmfs_chef\", \"wmfs_customer\"}'::text[]",
     "tags": "NULL::text[]",
     "language": "'ENG'::text",
