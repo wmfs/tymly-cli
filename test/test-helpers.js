@@ -56,6 +56,11 @@ function runTest (suiteName, testName, inputs, actionFn, ...args) {
         options[p] = path.join(outputPath, dirName)
       }
     }
+    for (const p of ['use']) {
+      if (options && options[p]) {
+        options[p] = path.resolve(outputPath, options[p])
+      }
+    }
 
     const testProfile = path.join(profilePath, dirName)
     if (fs.pathExistsSync(testProfile)) {

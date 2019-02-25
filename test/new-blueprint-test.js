@@ -128,4 +128,29 @@ describe('tymly new-blueprint', () => {
       }
     )
   }
+
+  const useAnotherInputs = [
+    'wmfs',
+    'For ordering delicious pizza',
+    '',
+    'Jane Doe',
+    'West Midlands Fire Service',
+    'MIT',
+    '',
+    '',
+    'Y',
+    'travis'
+  ]
+
+  helpers.runTest(
+    suiteName,
+    'use another',
+    useAnotherInputs,
+    newBlueprint,
+    'tymly-pizza-blueprint',
+    {
+      use: '../../additional-blueprint'
+    }
+  )
+
 })
