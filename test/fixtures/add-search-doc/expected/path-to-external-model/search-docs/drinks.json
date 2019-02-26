@@ -1,0 +1,27 @@
+{
+  "modelId": "drinks",
+  "attributeMapping": {
+    "id": "'drinks#'::text || code::text",
+    "docId": "code::text",
+    "domain": "'search'::text",
+    "docType": "'wmfs_drinks'::text",
+    "title": "label::text",
+    "description": "code::text || ' ' || label::text",
+    "additionalTerms": "NULL::text[]",
+    "category": "'pizza'::text",
+    "eventTimestamp": "NULL::timestamp with time zone",
+    "point": "NULL::text",
+    "activeEvent": "false::boolean",
+    "author": "'drinks'::text",
+    "teams": "NULL::text[]",
+    "rating": "NULL::text",
+    "roles": "'{\"$everyone\"}'::text[]",
+    "tags": "NULL::text[]",
+    "language": "'ENG'::text",
+    "rootAncestorId": "NULL::text",
+    "sortString": "label::text",
+    "launches": "'{\"launches\":[{\"input\":{\"code\":\"'||code||'\"},\"stateMachineName\":\"wmfs_updatePizza_1_0\",\"title\":\"Open\"}]}'::text",
+    "created": "_created::timestamp with time zone",
+    "modified": "_modified::timestamp with time zone"
+  }
+}

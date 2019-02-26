@@ -1,5 +1,7 @@
 /* eslint-env mocha */
 
+const path = require('path')
+
 const helpers = require('./test-helpers')
 
 const addSearchDoc = require('../lib/actions').addSearchDoc
@@ -36,8 +38,21 @@ describe('tymly add-search-doc', () => {
       helpers.down, // select view state machine
       '',
       'yes-boys' // accept default filename
-    ]
-
+    ],
+    'path-to-external-model': {
+      user: [
+        helpers.down, // label
+        ' ' + helpers.down + ' ', // description
+        // '', // addition fields -> select none of them
+        // '', // one category, autoselected
+        '', // roles - manual entry, accept default
+        'y', // state machine preselected, confirm
+        '',
+      ],
+      options: {
+        'modelPath': path.join(__dirname, 'fixtures/additional-blueprint/models/drinks.json')
+      }
+    }
   }
 
   const suiteName = 'add-search-doc'
@@ -47,12 +62,20 @@ describe('tymly add-search-doc', () => {
   })
 
   for (const [name, inputs] of Object.entries(tests)) {
+    let userInput = inputs
+    let options = { }
+    if (!Array.isArray(inputs)) {
+      userInput = inputs.user
+      options = inputs.options
+    }
+
     helpers.runTest(
       suiteName,
       name,
-      inputs,
+      userInput,
       addSearchDoc,
-      { }
+      options
     )
   }
 })
+
