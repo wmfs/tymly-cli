@@ -1,3 +1,10 @@
+# [2.25.0](https://github.com/wmfs/tymly-cli/compare/v2.24.0...v2.25.0) (2019-02-26)
+
+
+### ✨ Features
+
+* **addForm:** Solicit category when creating a form ([00eb6c9](https://github.com/wmfs/tymly-cli/commit/00eb6c9))
+
 # [2.24.0](https://github.com/wmfs/tymly-cli/compare/v2.23.0...v2.24.0) (2019-02-25)
 
 
