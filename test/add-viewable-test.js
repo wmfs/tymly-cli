@@ -1,5 +1,7 @@
 /* eslint-env mocha */
 
+const path = require('path')
+
 const helpers = require('./test-helpers')
 
 const addViewable = require('../lib/actions').addViewableAction
@@ -44,7 +46,19 @@ describe(`tymly ${suiteName}`, () => {
       '', // category
       'Y',
       'the-pizza-form.json'
-    ]
+    ],
+    'path-to-external-model': {
+      user: [
+        '', // generated form title
+        '', // generated form description
+        '', // category
+        'Y',
+        ''
+      ],
+      options: {
+        'modelPath': path.join(__dirname, 'fixtures/additional-blueprint/models/snacks.json')
+      }
+    }
   }
 
   before(() => {
@@ -53,13 +67,18 @@ describe(`tymly ${suiteName}`, () => {
 
   for (const [name, inputs] of Object.entries(tests)) {
     let userInput = inputs
+    let options = { }
+    if (!Array.isArray(inputs)) {
+      userInput = inputs.user
+      options = inputs.options
+    }
 
     helpers.runTest(
       suiteName,
       name,
       userInput,
       addViewable,
-      { }
+      options
     )
   }
 })

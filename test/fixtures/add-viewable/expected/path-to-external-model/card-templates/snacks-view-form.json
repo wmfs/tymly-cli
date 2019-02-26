@@ -1,0 +1,66 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0",
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Jumbotron",
+      "title": "Snacks Viewer",
+      "subtitle": "A form for viewing a Snacks."
+    },
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Code",
+          "value": "{{data.code}}"
+        }
+      ]
+    },
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Customer-facing label",
+          "value": "{{data.label}}"
+        }
+      ]
+    },
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Suitable for celiacs?",
+          "value": "{{data.gluten-free}}"
+        }
+      ]
+    },
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Got some nuts?",
+          "value": "{{data.contains-nuts}}"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Cancel",
+      "title": "Close"
+    }
+  ],
+  "templateMeta": {
+    "name": "snacks-view-form",
+    "title": "Snacks Viewer",
+    "category": "snacks"
+  },
+  "meta": {
+    "generatedWith": "scaffold",
+    "generatedOn": "now",
+    "data": {
+      "modelName": "snacks"
+    }
+  }
+}

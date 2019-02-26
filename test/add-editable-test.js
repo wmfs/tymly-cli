@@ -1,7 +1,8 @@
 /* eslint-env mocha */
 
-const helpers = require('./test-helpers')
 const path = require('path')
+
+const helpers = require('./test-helpers')
 
 const addEditable = require('../lib/actions').addEditableAction
 
@@ -63,7 +64,14 @@ describe('tymly add-editable', () => {
       '', // category
       'Y',
       ''
-    ]
+    ],
+    'bad-path-to-external-model': {
+      user: [
+      ],
+      options: {
+        'modelPath': path.join(__dirname, 'fixtures/additional-blueprint/models/paddling-pool.json')
+      }
+    }
   }
 
   const suiteName = 'add-editable'
