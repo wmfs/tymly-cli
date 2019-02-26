@@ -49,6 +49,11 @@
       "title": "Submit"
     }
   ],
+  "templateMeta": {
+    "name": "pizza-editing-form",
+    "title": "Pizza Editor",
+    "category": "pizza"
+  },
   "meta": {
     "generatedWith": "scaffold",
     "generatedOn": "now",

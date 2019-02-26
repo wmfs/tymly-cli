@@ -51,6 +51,11 @@
       "title": "Close"
     }
   ],
+  "templateMeta": {
+    "name": "pizza-view-form",
+    "title": "Pizza Viewer",
+    "category": "pizza"
+  },
   "meta": {
     "generatedWith": "scaffold",
     "generatedOn": "now",

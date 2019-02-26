@@ -11,6 +11,7 @@ describe(`tymly ${suiteName}`, () => {
     'one-model': [
       '', // generated form title
       '', // generated form description
+      '', // category
       'Y',
       ''
     ],
@@ -18,6 +19,7 @@ describe(`tymly ${suiteName}`, () => {
       helpers.down,
       '', // generated form title
       '', // generated form description
+      '', // category
       'Y',
       ''
     ],
@@ -25,6 +27,7 @@ describe(`tymly ${suiteName}`, () => {
       helpers.down,
       '', // generated form title
       '', // generated form description
+      '', // category
       'N',
       '',
       '', // generated title
@@ -38,6 +41,7 @@ describe(`tymly ${suiteName}`, () => {
     'set-file-name': [
       '', // generated form title
       '', // generated form description
+      '', // category
       'Y',
       'the-pizza-form.json'
     ]

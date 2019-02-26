@@ -44,6 +44,11 @@
       "title": "Submit"
     }
   ],
+  "templateMeta": {
+    "name": "drinks-editing-form",
+    "title": "Drinks Editor",
+    "category": "drinks"
+  },
   "meta": {
     "generatedWith": "scaffold",
     "generatedOn": "now",

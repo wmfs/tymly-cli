@@ -10,6 +10,7 @@ describe('tymly add-editable', () => {
     'one-model': [
       '', // generated form title
       '', // generated form description
+      '', // category
       'Y',
       ''
     ],
@@ -17,6 +18,7 @@ describe('tymly add-editable', () => {
       helpers.down,
       '', // generated form title
       '', // generated form description
+      '', // category
       'Y',
       ''
     ],
@@ -24,6 +26,7 @@ describe('tymly add-editable', () => {
       helpers.down,
       'Simple Pizza!', // alternative title
       'For your raaaaapid pizza data entry needs', // alternative description
+      '', // category
       'N',
       '',
       '', // generated title
@@ -37,6 +40,7 @@ describe('tymly add-editable', () => {
     'set-file-name': [
       '', // generated form title
       '', // generated form description
+      '', // category
       'Y',
       'the-pizza-form.json'
     ],
@@ -44,6 +48,7 @@ describe('tymly add-editable', () => {
       user: [
         '', // generated form title
         '', // generated form description
+        '', // category
         'Y',
         ''
       ],
@@ -55,6 +60,7 @@ describe('tymly add-editable', () => {
       helpers.down + helpers.down,
       '', // generated form title
       '', // generated form description
+      '', // category
       'Y',
       ''
     ]
