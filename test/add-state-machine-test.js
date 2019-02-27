@@ -6,6 +6,22 @@ const addStateMachine = require('../lib/actions').addStateMachine
 
 describe('tymly add-state-machine', () => {
   const tests = {
+    'create with reindex': [
+      '',
+      '', // default title
+      '', // default description
+      '', // default role
+      'Y', // reindex
+      ''
+    ],
+    'create no reindex': [
+      '',
+      '', // default title
+      '', // default description
+      '', // default role
+      'N', // reindex
+      ''
+    ],
     'update': [
       helpers.down,
       '', // default title

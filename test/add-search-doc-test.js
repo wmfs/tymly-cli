@@ -47,7 +47,7 @@ describe('tymly add-search-doc', () => {
         // '', // one category, autoselected
         '', // roles - manual entry, accept default
         'y', // state machine preselected, confirm
-        '',
+        ''
       ],
       options: {
         'modelPath': path.join(__dirname, 'fixtures/additional-blueprint/models/drinks.json')
@@ -78,4 +78,3 @@ describe('tymly add-search-doc', () => {
     )
   }
 })
-
