@@ -22,11 +22,20 @@ describe('tymly add-state-machine', () => {
       'N', // reindex
       ''
     ],
-    'update': [
+    'update with reindex': [
       helpers.down,
       '', // default title
       '', // default description
       '', // default role
+      'Y',
+      ''
+    ],
+    'update no reindex': [
+      helpers.down,
+      '', // default title
+      '', // default description
+      '', // default role
+      'N',
       ''
     ],
     'two-forms-no-meta': [
@@ -43,6 +52,7 @@ describe('tymly add-state-machine', () => {
       '', // default title
       'Pizza for everyone!',
       ' ', // $everyone role
+      'N',
       'futz-around-with-pizza'
     ]
   }
