@@ -1,3 +1,24 @@
+# [2.26.0](https://github.com/wmfs/tymly-cli/compare/v2.25.0...v2.26.0) (2019-02-27)
+
+
+### ✨ Features
+
+* **add-function:** add-function command ([20cbf99](https://github.com/wmfs/tymly-cli/commit/20cbf99))
+* **add-state-machine:** Solicit reindex info if required ([6d268bb](https://github.com/wmfs/tymly-cli/commit/6d268bb))
+
+
+### 🐛 Bug Fixes
+
+* **addSearchDoc:** Include data field ([e8e85fb](https://github.com/wmfs/tymly-cli/commit/e8e85fb))
+* **deps:** Bump tymly-scaffold to 1.24.1 ([c050d63](https://github.com/wmfs/tymly-cli/commit/c050d63))
+
+
+### 🚨 Tests
+
+* **add-search-doc:** Added test for scaffolding a search doc against an external model ([64715e6](https://github.com/wmfs/tymly-cli/commit/64715e6))
+* **add-state-machine:** Correct tests for reindex in update state machine ([450abcf](https://github.com/wmfs/tymly-cli/commit/450abcf))
+* **addForm:** Extra couple of tests ([17ac135](https://github.com/wmfs/tymly-cli/commit/17ac135))
+
 # [2.25.0](https://github.com/wmfs/tymly-cli/compare/v2.24.0...v2.25.0) (2019-02-26)
 
 
