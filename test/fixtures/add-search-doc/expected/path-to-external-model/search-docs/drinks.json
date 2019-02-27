@@ -15,6 +15,7 @@
     "author": "'drinks'::text",
     "teams": "NULL::text[]",
     "rating": "NULL::text",
+    "data": "NULL::text",
     "roles": "'{\"$everyone\"}'::text[]",
     "tags": "NULL::text[]",
     "language": "'ENG'::text",
