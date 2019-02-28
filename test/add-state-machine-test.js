@@ -6,20 +6,39 @@ const addStateMachine = require('../lib/actions').addStateMachine
 
 describe('tymly add-state-machine', () => {
   const tests = {
-    'create with reindex': [
+    'create with reindex no presavefn': [
       '',
       '', // default title
       '', // default description
       '', // default role
       'Y', // reindex
+      '', // presave functions available, but choose None
       ''
     ],
-    'create no reindex': [
+    'create with reindex with presavefn': [
+      '',
+      '', // default title
+      '', // default description
+      '', // default role
+      'Y', // reindex
+      helpers.down, // one presave function
+      ''
+    ],
+    'create no reindex no presavefn': [
       '',
       '', // default title
       '', // default description
       '', // default role
       'N', // reindex
+      ''
+    ],
+    'create no reindex with presavefn': [
+      '',
+      '', // default title
+      '', // default description
+      '', // default role
+      'N', // reindex
+      helpers.down + helpers.down, // two presave functions, choose second one
       ''
     ],
     'update with reindex': [

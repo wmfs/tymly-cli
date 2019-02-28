@@ -1,0 +1,57 @@
+{
+  "Comment": "Create pizza using pizza-editing-form form.",
+  "name": "Create pizza",
+  "version": "1.0",
+  "categories": [
+    "pizza"
+  ],
+  "instigators": [
+    "user"
+  ],
+  "StartAt": "AwaitingHumanInput",
+  "States": {
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "form",
+        "uiName": "wmfs_pizzaEditingForm",
+        "dataPath": "$.formData"
+      },
+      "ResultPath": "$.formData",
+      "Next": "PreSave"
+    },
+    "PreSave": {
+      "Type": "Task",
+      "Resource": "function:wmfs_addDescription",
+      "InputPath": "$.formData",
+      "ResultPath": "$.formData",
+      "Next": "Upserting"
+    },
+    "Upserting": {
+      "Type": "Task",
+      "InputPath": "$.formData",
+      "Resource": "module:upserting",
+      "ResourceConfig": {
+        "modelId": "pizza"
+      },
+      "Next": "DeltaReindex"
+    },
+    "DeltaReindex": {
+      "Type": "Task",
+      "Resource": "module:deltaReindex",
+      "ResourceConfig": {
+        "core": "tymly"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
