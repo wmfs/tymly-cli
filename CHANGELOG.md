@@ -1,3 +1,10 @@
+# [2.27.0](https://github.com/wmfs/tymly-cli/compare/v2.26.0...v2.27.0) (2019-02-28)
+
+
+### ✨ Features
+
+* **add-state-machine:** Can provide a presave function ([778f621](https://github.com/wmfs/tymly-cli/commit/778f621))
+
 # [2.26.0](https://github.com/wmfs/tymly-cli/compare/v2.25.0...v2.26.0) (2019-02-27)
 
 
