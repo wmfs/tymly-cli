@@ -1,3 +1,20 @@
+# [2.28.0](https://github.com/wmfs/tymly-cli/compare/v2.27.0...v2.28.0) (2019-03-01)
+
+
+### ✨ Features
+
+* **add-model:** Model properties can have descriptions as well as labels ([c14665e](https://github.com/wmfs/tymly-cli/commit/c14665e))
+
+
+### 📦 Code Refactoring
+
+* **blueprint:** Loading and processing the components was all very similar ([a75c9dd](https://github.com/wmfs/tymly-cli/commit/a75c9dd))
+
+
+### 💎 Styles
+
+* Lint fix ([67f578c](https://github.com/wmfs/tymly-cli/commit/67f578c))
+
 # [2.27.0](https://github.com/wmfs/tymly-cli/compare/v2.26.0...v2.27.0) (2019-02-28)
 
 
