@@ -12,7 +12,8 @@
     "label": {
       "typeHint": "text",
       "type": "string",
-      "title": "Customer-facing label"
+      "title": "Customer-facing label",
+      "description": "For display on menus, etc"
     },
     "popularitySeq": {
       "typeHint": "integer",
