@@ -1,3 +1,10 @@
+## [2.28.1](https://github.com/wmfs/tymly-cli/compare/v2.28.0...v2.28.1) (2019-03-04)
+
+
+### 🐛 Bug Fixes
+
+* **use:** Fix pulling things through from other blueprints ([eadd6e9](https://github.com/wmfs/tymly-cli/commit/eadd6e9))
+
 # [2.28.0](https://github.com/wmfs/tymly-cli/compare/v2.27.0...v2.28.0) (2019-03-01)
 
 
