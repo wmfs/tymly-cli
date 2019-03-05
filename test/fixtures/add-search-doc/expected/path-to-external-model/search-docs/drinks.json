@@ -6,7 +6,7 @@
     "domain": "'search'::text",
     "docType": "'wmfs_drinks'::text",
     "title": "label::text",
-    "description": "code::text || ' ' || label::text",
+    "description": "concat(code::text, ' ', label::text)",
     "additionalTerms": "NULL::text[]",
     "category": "'pizza'::text",
     "eventTimestamp": "NULL::timestamp with time zone",

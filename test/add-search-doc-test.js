@@ -34,8 +34,8 @@ describe('tymly add-search-doc', () => {
       // '', // addition fields -> select none of them
       helpers.down, // categories - select pizza
       helpers.down + helpers.down + ' ' + helpers.down + ' ', // roles - select chef and customer
+      helpers.down + helpers.down, // select view state machine
       'View',
-      helpers.down, // select view state machine
       '',
       'yes-boys' // accept default filename
     ],
