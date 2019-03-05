@@ -1,3 +1,10 @@
+## [2.28.3](https://github.com/wmfs/tymly-cli/compare/v2.28.2...v2.28.3) (2019-03-05)
+
+
+### 🐛 Bug Fixes
+
+* **add-search-doc:** Show state machine name when selecting ([e1c0038](https://github.com/wmfs/tymly-cli/commit/e1c0038))
+
 ## [2.28.2](https://github.com/wmfs/tymly-cli/compare/v2.28.1...v2.28.2) (2019-03-05)
 
 
