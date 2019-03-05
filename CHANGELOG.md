@@ -1,3 +1,11 @@
+## [2.28.2](https://github.com/wmfs/tymly-cli/compare/v2.28.1...v2.28.2) (2019-03-05)
+
+
+### 🐛 Bug Fixes
+
+* **add-search-doc:** Ask for state machine then label ([bfdb06e](https://github.com/wmfs/tymly-cli/commit/bfdb06e))
+* **deps:** Bump tymly-scaffold to 1.26.3 ([3afb68a](https://github.com/wmfs/tymly-cli/commit/3afb68a))
+
 ## [2.28.1](https://github.com/wmfs/tymly-cli/compare/v2.28.0...v2.28.1) (2019-03-04)
 
 
