@@ -1,3 +1,10 @@
+# [2.29.0](https://github.com/wmfs/tymly-cli/compare/v2.28.3...v2.29.0) (2019-03-08)
+
+
+### 🛠 Builds
+
+* **deps:** Bump tymly-scaffold from 1.26.3 to 1.26.4 ([3bcc3f0](https://github.com/wmfs/tymly-cli/commit/3bcc3f0))
+
 ## [2.28.3](https://github.com/wmfs/tymly-cli/compare/v2.28.2...v2.28.3) (2019-03-05)
 
 
