@@ -1,3 +1,10 @@
+## [2.29.1](https://github.com/wmfs/tymly-cli/compare/v2.29.0...v2.29.1) (2019-03-12)
+
+
+### 🐛 Bug Fixes
+
+* camelCase all the things ([0227456](https://github.com/wmfs/tymly-cli/commit/0227456))
+
 # [2.29.0](https://github.com/wmfs/tymly-cli/compare/v2.28.3...v2.29.0) (2019-03-08)
 
 
