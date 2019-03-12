@@ -1,3 +1,15 @@
+## [2.29.2](https://github.com/wmfs/tymly-cli/compare/v2.29.1...v2.29.2) (2019-03-12)
+
+
+### 🐛 Bug Fixes
+
+* Better labels when chosing fields. Default all fields to false. ([3284a25](https://github.com/wmfs/tymly-cli/commit/3284a25))
+
+
+### 📦 Code Refactoring
+
+* Pulled out select form, prettied it up a touch ([f27aa69](https://github.com/wmfs/tymly-cli/commit/f27aa69))
+
 ## [2.29.1](https://github.com/wmfs/tymly-cli/compare/v2.29.0...v2.29.1) (2019-03-12)
 
 
