@@ -1,3 +1,11 @@
+## [2.29.3](https://github.com/wmfs/tymly-cli/compare/v2.29.2...v2.29.3) (2019-03-12)
+
+
+### 🐛 Bug Fixes
+
+* **roles:** Added empty descriptions to built-in roles ([9ae904d](https://github.com/wmfs/tymly-cli/commit/9ae904d))
+* **search-docs:** Include built-in roles ([6b613cf](https://github.com/wmfs/tymly-cli/commit/6b613cf))
+
 ## [2.29.2](https://github.com/wmfs/tymly-cli/compare/v2.29.1...v2.29.2) (2019-03-12)
 
 
