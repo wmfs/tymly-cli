@@ -1,5 +1,5 @@
 {
-  "Comment": "View pizza using pizza-editing-form form.",
+  "Comment": "View pizza using pizzaEditingForm form.",
   "name": "View pizza",
   "version": "1.0",
   "categories": [
