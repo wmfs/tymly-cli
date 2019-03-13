@@ -1,9 +1,9 @@
 {
-  "Comment": "Create pizza using pizza-editing-form form.",
+  "Comment": "Create pizza using pizzaEditingForm form.",
   "name": "Create pizza",
   "version": "1.0",
   "categories": [
-    "pizza"
+    "pizzaShop"
   ],
   "instigators": [
     "user"

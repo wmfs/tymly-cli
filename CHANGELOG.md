@@ -1,3 +1,30 @@
+## [2.29.3](https://github.com/wmfs/tymly-cli/compare/v2.29.2...v2.29.3) (2019-03-12)
+
+
+### 🐛 Bug Fixes
+
+* **roles:** Added empty descriptions to built-in roles ([9ae904d](https://github.com/wmfs/tymly-cli/commit/9ae904d))
+* **search-docs:** Include built-in roles ([6b613cf](https://github.com/wmfs/tymly-cli/commit/6b613cf))
+
+## [2.29.2](https://github.com/wmfs/tymly-cli/compare/v2.29.1...v2.29.2) (2019-03-12)
+
+
+### 🐛 Bug Fixes
+
+* Better labels when chosing fields. Default all fields to false. ([3284a25](https://github.com/wmfs/tymly-cli/commit/3284a25))
+
+
+### 📦 Code Refactoring
+
+* Pulled out select form, prettied it up a touch ([f27aa69](https://github.com/wmfs/tymly-cli/commit/f27aa69))
+
+## [2.29.1](https://github.com/wmfs/tymly-cli/compare/v2.29.0...v2.29.1) (2019-03-12)
+
+
+### 🐛 Bug Fixes
+
+* camelCase all the things ([0227456](https://github.com/wmfs/tymly-cli/commit/0227456))
+
 # [2.29.0](https://github.com/wmfs/tymly-cli/compare/v2.28.3...v2.29.0) (2019-03-08)
 
 
