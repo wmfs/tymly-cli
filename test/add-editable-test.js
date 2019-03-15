@@ -65,6 +65,13 @@ describe('tymly add-editable', () => {
       'Y',
       ''
     ],
+    'choice-set-field': [
+      '', // generated form title
+      '', // generated form description
+      '', // category
+      'Y',
+      ''
+    ],
     'bad-path-to-external-model': {
       user: [
       ],
