@@ -1,3 +1,21 @@
+## [2.29.4](https://github.com/wmfs/tymly-cli/compare/v2.29.3...v2.29.4) (2019-03-15)
+
+
+### 🐛 Bug Fixes
+
+* search-doc ratings field is now numeric ([c1884ff](https://github.com/wmfs/tymly-cli/commit/c1884ff))
+
+
+### 🚨 Tests
+
+* Test for choice typeHint with choices embedded in model ([13a0314](https://github.com/wmfs/tymly-cli/commit/13a0314))
+
+
+### ♻️ Chores
+
+* **deps:** Bump tymly-scaffold to 1.27.0 from 1.26.4 ([58db0c6](https://github.com/wmfs/tymly-cli/commit/58db0c6))
+* **deps:** Bump tymly-scaffold to 1.28.0 ([d2127d2](https://github.com/wmfs/tymly-cli/commit/d2127d2))
+
 ## [2.29.3](https://github.com/wmfs/tymly-cli/compare/v2.29.2...v2.29.3) (2019-03-12)
 
 
