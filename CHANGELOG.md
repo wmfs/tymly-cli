@@ -1,3 +1,10 @@
+# [2.30.0](https://github.com/wmfs/tymly-cli/compare/v2.29.4...v2.30.0) (2019-03-19)
+
+
+### ✨ Features
+
+* FactSet Facts get choices, if available ([10aa607](https://github.com/wmfs/tymly-cli/commit/10aa607))
+
 ## [2.29.4](https://github.com/wmfs/tymly-cli/compare/v2.29.3...v2.29.4) (2019-03-15)
 
 
