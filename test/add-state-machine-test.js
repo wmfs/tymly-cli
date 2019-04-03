@@ -58,7 +58,7 @@ describe('tymly add-state-machine', () => {
       ''
     ],
     'two-forms-no-meta': [
-      helpers.down + helpers.down, // state machine
+      helpers.down + helpers.down + helpers.down, // state machine
       helpers.down, // choose form
       helpers.down, // choose model
       '', // default title
