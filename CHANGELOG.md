@@ -1,3 +1,15 @@
+# [2.32.0](https://github.com/wmfs/tymly-cli/compare/v2.31.0...v2.32.0) (2019-04-03)
+
+
+### ✨ Features
+
+* New add-table command ([c3b96ea](https://github.com/wmfs/tymly-cli/commit/c3b96ea))
+
+
+### 💎 Styles
+
+* Remove unused import ([07138fd](https://github.com/wmfs/tymly-cli/commit/07138fd))
+
 # [2.31.0](https://github.com/wmfs/tymly-cli/compare/v2.30.0...v2.31.0) (2019-04-03)
 
 
