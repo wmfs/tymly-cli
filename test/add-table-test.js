@@ -1,7 +1,5 @@
 /* eslint-env mocha */
 
-const path = require('path')
-
 const helpers = require('./test-helpers')
 
 const addTable = require('../lib/actions').addTableAction
