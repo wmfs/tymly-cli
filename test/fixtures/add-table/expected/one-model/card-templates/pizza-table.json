@@ -1,0 +1,52 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0",
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Jumbotron",
+      "title": "Pizza Viewer",
+      "subtitle": "A form for viewing a Pizza."
+    },
+    {
+      "type": "Table",
+      "arrayPath": "pizza",
+      "columns": [
+        {
+          "title": "Code",
+          "field": "code"
+        },
+        {
+          "title": "Customer-facing label",
+          "field": "label"
+        },
+        {
+          "title": "Popularity seq",
+          "field": "popularitySeq"
+        },
+        {
+          "title": "Vegetarian",
+          "field": "vegetarian"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Cancel",
+      "title": "Close"
+    }
+  ],
+  "templateMeta": {
+    "name": "pizza-table",
+    "title": "Pizza Viewer",
+    "category": "pizza"
+  },
+  "meta": {
+    "generatedWith": "scaffold",
+    "generatedOn": "now",
+    "data": {
+      "modelName": "pizza"
+    }
+  }
+}
