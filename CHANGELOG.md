@@ -1,3 +1,10 @@
+# [2.31.0](https://github.com/wmfs/tymly-cli/compare/v2.30.0...v2.31.0) (2019-04-03)
+
+
+### ✨ Features
+
+* Support for view-all state machines ([a4d536e](https://github.com/wmfs/tymly-cli/commit/a4d536e))
+
 # [2.30.0](https://github.com/wmfs/tymly-cli/compare/v2.29.4...v2.30.0) (2019-03-19)
 
 
