@@ -36,7 +36,7 @@
     "bdd-stdin": "0.2.0",
     "chai": "4.2.0",
     "codecov": "3.6.5",
-    "conventional-changelog-metahub": "3.0.0",
+    "conventional-changelog-metahub": "4.0.1",
     "cz-conventional-changelog": "3.0.2",
     "diff": "4.0.1",
     "dirty-chai": "2.0.1",
