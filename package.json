@@ -27,7 +27,7 @@
     "ansi-colors": "3.2.3",
     "commander": "2.19.0",
     "enquirer": "2.3.0",
-    "fs-extra": "7.0.1",
+    "fs-extra": "9.0.0",
     "username": "5.1.0"
   },
   "devDependencies": {
