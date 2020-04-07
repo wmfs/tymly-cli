@@ -41,7 +41,7 @@
     "diff": "4.0.1",
     "dirty-chai": "2.0.1",
     "mocha": "7.1.1",
-    "nyc": "15.0.0",
+    "nyc": "15.0.1",
     "request-promise-native": "1.0.8",
     "rimraf": "3.0.2",
     "semantic-release": "17.0.4",
