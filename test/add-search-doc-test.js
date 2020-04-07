@@ -50,7 +50,7 @@ describe('tymly add-search-doc', () => {
         ''
       ],
       options: {
-        'modelPath': path.join(__dirname, 'fixtures/additional-blueprint/models/drinks.json')
+        modelPath: path.join(__dirname, 'fixtures/additional-blueprint/models/drinks.json')
       }
     }
   }

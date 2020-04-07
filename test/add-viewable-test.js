@@ -56,7 +56,7 @@ describe(`tymly ${suiteName}`, () => {
         ''
       ],
       options: {
-        'modelPath': path.join(__dirname, 'fixtures/additional-blueprint/models/snacks.json')
+        modelPath: path.join(__dirname, 'fixtures/additional-blueprint/models/snacks.json')
       }
     }
   }
