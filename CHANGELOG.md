@@ -1,3 +1,40 @@
+# [2.33.0](https://github.com/wmfs/tymly-cli/compare/v2.32.0...v2.33.0) (2020-04-08)
+
+
+### 🛠 Builds
+
+* **deps:** Bump ansi-colors from 3.2.3 to 4.1.1 ([bca4b50](https://github.com/wmfs/tymly-cli/commit/bca4b50ad4fc952803c94e9c7a8b600c631d9201))
+* **deps:** Bump changelog packages ([40a6d79](https://github.com/wmfs/tymly-cli/commit/40a6d790d56ce37f13044e912efd92b227b35b3a))
+* **deps:** Bump commander from 2.19.0 to 5.0.0 ([6280d42](https://github.com/wmfs/tymly-cli/commit/6280d421c1d050f65f41ecea260b10bedc23b857))
+* **deps:** Bump diff from 4.0.1 to 4.0.2 ([00de222](https://github.com/wmfs/tymly-cli/commit/00de222945823d2b1c91c9f72a778bf8e7e810fb))
+* **deps:** Bump fs-extra from 7.0.1 to 9.0.0 ([d1a2e50](https://github.com/wmfs/tymly-cli/commit/d1a2e5072b7d7285196b560de451715af4fa09e0))
+* **deps:** Bump mocha from 6.2.2 to 7.1.1 ([ce3fd5e](https://github.com/wmfs/tymly-cli/commit/ce3fd5e6a67fb77e5f0f01c4494e0cd125cb4c3d))
+* **deps:** Bump standard from 12.0.1 to 14.3.3 ([645c62f](https://github.com/wmfs/tymly-cli/commit/645c62f93d4ddfe06423c33260fb13a1fbb56095))
+* **deps:** Bump username from 4.0.0 to 5.1.0 ([210ec98](https://github.com/wmfs/tymly-cli/commit/210ec987770a4856750065ba6ead0de76fdb8da0))
+* **deps-dev:** bump codecov from 3.6.1 to 3.6.5 ([bacb76f](https://github.com/wmfs/tymly-cli/commit/bacb76f6fbad5184f38d8ae81165b2bb7ec1dac1))
+* **deps-dev:** bump packages ([d1a1f39](https://github.com/wmfs/tymly-cli/commit/d1a1f395157ad31497fad61df7988ba811caf6f1))
+* **deps-dev:** update dev dependancies ([fcd642b](https://github.com/wmfs/tymly-cli/commit/fcd642b1f13e69ad9973bd8b84a68975b568bbc8))
+* **deps-dev:** update semantic-release dev dependencies ([6ab42a2](https://github.com/wmfs/tymly-cli/commit/6ab42a2e4758fcc065c532868e93e0b8a23656dc))
+
+
+### 📚 Documentation
+
+* Add CircleCI badge ([aa56541](https://github.com/wmfs/tymly-cli/commit/aa56541b1d7296eef0c3d9d210beeb70955f72d3))
+
+
+### 🚨 Tests
+
+* **deps:** Bump nyc from 15.0.0 to 15.0.1 ([c858122](https://github.com/wmfs/tymly-cli/commit/c858122018ff6e760413ecec9284f017520d61e0))
+* **deps:** Bump rimraf from 3.0.0 to 3.0.2 ([b33006e](https://github.com/wmfs/tymly-cli/commit/b33006e20fb72928d0f5573fef458c5f6bd9d2d7))
+* Tweak tests so copyright lines match regardless of year ([3d3dbb0](https://github.com/wmfs/tymly-cli/commit/3d3dbb06333e1bc0e5f35e8e564be5121c0982e6))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** Add CircleCI config ([0a8e84b](https://github.com/wmfs/tymly-cli/commit/0a8e84bb22a6759bb16a999f8a0d7775f00de708))
+* **circle:** add context env var config to config.yml ([32f4ba5](https://github.com/wmfs/tymly-cli/commit/32f4ba511dc33aa124b447c7683c9707642c30e0))
+* **travis:** Remove Travis config ([697da86](https://github.com/wmfs/tymly-cli/commit/697da864291980ed8237d8ac2a4fa24b374b2467))
+
 # [2.32.0](https://github.com/wmfs/tymly-cli/compare/v2.31.0...v2.32.0) (2019-04-03)
 
 
