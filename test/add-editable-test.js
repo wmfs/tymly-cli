@@ -54,7 +54,7 @@ describe('tymly add-editable', () => {
         ''
       ],
       options: {
-        'modelPath': path.join(__dirname, 'fixtures/additional-blueprint/models/drinks.json')
+        modelPath: path.join(__dirname, 'fixtures/additional-blueprint/models/drinks.json')
       }
     },
     'uses-additional-blueprint': [
@@ -76,7 +76,7 @@ describe('tymly add-editable', () => {
       user: [
       ],
       options: {
-        'modelPath': path.join(__dirname, 'fixtures/additional-blueprint/models/paddling-pool.json')
+        modelPath: path.join(__dirname, 'fixtures/additional-blueprint/models/paddling-pool.json')
       }
     }
   }

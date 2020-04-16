@@ -168,9 +168,11 @@ function compareFiles (expectedFile, outputFile, errors) {
 } // compareFiles
 
 function loadFile (fileName) {
+  const year = new Date().getFullYear()
   const file = fs.readFileSync(fileName, 'utf8')
   const lines = file
     .split('\n')
+    .map(l => l.replace('{year}', year))
     .filter(l => !l.match(/"generated(With|On)":/))
     .filter(l => !!l.trim())
     .join('\n')
