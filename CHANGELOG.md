@@ -1,3 +1,27 @@
+# [2.34.0](https://github.com/wmfs/tymly-cli/compare/v2.33.0...v2.34.0) (2020-06-01)
+
+
+### 🛠 Builds
+
+* **(deps):** bump [@wmfs](https://github.com/wmfs)/tymly-scaffold from 1.30.1 to 1.40.0 ([c1fcfa4](https://github.com/wmfs/tymly-cli/commit/c1fcfa4a12368ef0960e90b069b777f20360cd6d))
+* **deps:** bump commander from 5.0.0 to 5.1.0 ([7cdea1f](https://github.com/wmfs/tymly-cli/commit/7cdea1fd03bb2accdaf89cfe5fcbbb401c7c5347))
+* **deps-dev:** bump codecov from 3.6.5 to 3.7.0 ([6eafcc7](https://github.com/wmfs/tymly-cli/commit/6eafcc707a4e4842bedd69fcd9bda67f15fd6058))
+* **deps-dev:** bump cz-conventional-changelog from 3.1.0 to 3.1.1 ([7f8f710](https://github.com/wmfs/tymly-cli/commit/7f8f7106430b6fd99338b8110c393fd95431ad4c))
+* **deps-dev:** bump cz-conventional-changelog from 3.1.1 to 3.2.0 ([ddc85d2](https://github.com/wmfs/tymly-cli/commit/ddc85d2eeb759f98e2209dac55d898998608f1c8))
+* **deps-dev:** bump mocha from 7.1.1 to 7.1.2 ([5458aea](https://github.com/wmfs/tymly-cli/commit/5458aea452b9ff863ad5d3585d25850ca9e8afea))
+* **deps-dev:** bump mocha from 7.1.2 to 7.2.0 ([ae01188](https://github.com/wmfs/tymly-cli/commit/ae01188dcaf1de7bb2c1f8ce0eb9204748639bb8))
+* **deps-dev:** bump nyc from 15.0.1 to 15.1.0 ([3708b65](https://github.com/wmfs/tymly-cli/commit/3708b65273da653fee65b4b15fb8a13677550eff))
+* **deps-dev:** bump semantic-release from 17.0.4 to 17.0.5 ([7fdce27](https://github.com/wmfs/tymly-cli/commit/7fdce279b9beddcb9a1d44334c07f572410036a6))
+* **deps-dev:** bump semantic-release from 17.0.5 to 17.0.6 ([7b04334](https://github.com/wmfs/tymly-cli/commit/7b04334c14deb689f6bbe30b28485527dd5a8bfa))
+* **deps-dev:** bump semantic-release from 17.0.6 to 17.0.7 ([67f50b0](https://github.com/wmfs/tymly-cli/commit/67f50b072c2c6aba73eb3569f438ff316f900636))
+* **deps-dev:** bump semantic-release from 17.0.7 to 17.0.8 ([df3b082](https://github.com/wmfs/tymly-cli/commit/df3b08263f67e16a1b662904b2568934e1b4d337))
+* **deps-dev:** bump standard from 14.3.3 to 14.3.4 ([bcdc8bf](https://github.com/wmfs/tymly-cli/commit/bcdc8bffc512d338ef29af1efe1ce983d2c1e729))
+
+
+### 🚨 Tests
+
+* **deps:** Correct tests for [@wmfs](https://github.com/wmfs)/tymly-scaffold 1.40.0 ([fdc615e](https://github.com/wmfs/tymly-cli/commit/fdc615e59915768ff84730c934065e79dc3d78c9))
+
 # [2.33.0](https://github.com/wmfs/tymly-cli/compare/v2.32.0...v2.33.0) (2020-04-08)
 
 
