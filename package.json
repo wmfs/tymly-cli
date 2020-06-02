@@ -23,9 +23,9 @@
     "tymly": "bin/tymly-cli.js"
   },
   "dependencies": {
-    "@wmfs/tymly-scaffold": "1.30.1",
+    "@wmfs/tymly-scaffold": "1.40.0",
     "ansi-colors": "4.1.1",
-    "commander": "5.0.0",
+    "commander": "5.1.0",
     "enquirer": "2.3.0",
     "fs-extra": "9.0.0",
     "username": "5.1.0"
@@ -41,7 +41,7 @@
     "diff": "4.0.2",
     "dirty-chai": "2.0.1",
     "mocha": "7.2.0",
-    "nyc": "15.0.1",
+    "nyc": "15.1.0",
     "request-promise-native": "1.0.8",
     "rimraf": "3.0.2",
     "semantic-release": "17.0.8",

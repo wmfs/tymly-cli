@@ -37,8 +37,8 @@
       },
       "End": true
     }
-  },
-  "restrictions": [
+  }
+  ,"restrictions": [
     {
       "roleId": "$everyone",
       "allows": [

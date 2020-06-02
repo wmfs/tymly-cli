@@ -27,8 +27,8 @@
       },
       "End": true
     }
-  },
-  "restrictions": [
+  }
+  ,"restrictions": [
     {
       "roleId": "$authenticated",
       "allows": [
