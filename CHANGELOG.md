@@ -1,3 +1,18 @@
+# [2.35.0](https://github.com/wmfs/tymly-cli/compare/v2.34.0...v2.35.0) (2020-07-15)
+
+
+### 🛠 Builds
+
+* **deps:** bump fs-extra from 9.0.0 to 9.0.1 ([996aee0](https://github.com/wmfs/tymly-cli/commit/996aee0bf1ef8d48a8deb322fdc6e2b22d389908))
+* **deps-dev:** bump mocha from 7.2.0 to 8.0.1 ([43b104b](https://github.com/wmfs/tymly-cli/commit/43b104b68662df5c6c22b209416918c373681fe8))
+* **deps-dev:** bump semantic-release from 17.0.8 to 17.1.0 ([333448f](https://github.com/wmfs/tymly-cli/commit/333448ff54bfce7dcacb04042758055eb42da6a7))
+* **deps-dev:** bump semantic-release from 17.1.0 to 17.1.1 ([4110e34](https://github.com/wmfs/tymly-cli/commit/4110e34729b7280e736cdbd8ddd6e3b921317905))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** use updated circle node image [skip ci] ([2fa1fc0](https://github.com/wmfs/tymly-cli/commit/2fa1fc0aa49e05b70b88522231eb84eaf36f2058))
+
 # [2.34.0](https://github.com/wmfs/tymly-cli/compare/v2.33.0...v2.34.0) (2020-06-01)
 
 
