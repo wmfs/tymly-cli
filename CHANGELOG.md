@@ -1,3 +1,10 @@
+# [2.36.0](https://github.com/wmfs/tymly-cli/compare/v2.35.0...v2.36.0) (2020-07-16)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/tymly-scaffold from 1.40.0 to 1.42.0 ([9041ba7](https://github.com/wmfs/tymly-cli/commit/9041ba751fc33178a3b0258b05b062dbacafbdbb))
+
 # [2.35.0](https://github.com/wmfs/tymly-cli/compare/v2.34.0...v2.35.0) (2020-07-15)
 
 
