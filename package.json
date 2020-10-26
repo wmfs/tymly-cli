@@ -45,7 +45,7 @@
     "request-promise-native": "1.0.9",
     "rimraf": "3.0.2",
     "semantic-release": "17.2.1",
-    "standard": "14.3.4",
+    "standard": "15.0.0",
     "std-mocks": "1.0.1"
   },
   "scripts": {
