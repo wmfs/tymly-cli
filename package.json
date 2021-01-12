@@ -23,7 +23,7 @@
     "tymly": "bin/tymly-cli.js"
   },
   "dependencies": {
-    "@wmfs/tymly-scaffold": "1.47.0",
+    "@wmfs/tymly-scaffold": "1.51.0",
     "ansi-colors": "4.1.1",
     "commander": "5.1.0",
     "enquirer": "2.3.0",
