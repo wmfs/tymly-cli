@@ -1,3 +1,16 @@
+# [2.38.0](https://github.com/wmfs/tymly-cli/compare/v2.37.0...v2.38.0) (2026-08-13)
+
+
+### Bug Fixes
+
+* test updates ([da61f21](https://github.com/wmfs/tymly-cli/commit/da61f21ffd05101be469f59f377c4db78e38b433))
+* update .circleci/config.yml to 2.1 ([84fdf0f](https://github.com/wmfs/tymly-cli/commit/84fdf0fe0cb099933614b9c73003bad628c388a0))
+
+
+### Features
+
+* search doc rating is numeric now ([b421a49](https://github.com/wmfs/tymly-cli/commit/b421a490e437694bcfea355c962783d598a55796))
+
 # [2.37.0](https://github.com/wmfs/tymly-cli/compare/v2.36.0...v2.37.0) (2020-07-20)
 
 
