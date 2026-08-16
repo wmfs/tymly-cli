@@ -39,7 +39,7 @@
     "cz-conventional-changelog": "3.3.0",
     "diff": "9.0.0",
     "dirty-chai": "2.0.1",
-    "mocha": "8.4.0",
+    "mocha": "11.8.0",
     "nyc": "15.1.0",
     "request-promise-native": "1.0.9",
     "rimraf": "3.0.2",
