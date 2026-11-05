@@ -1,3 +1,10 @@
+## [2.39.1](https://github.com/wmfs/tymly-cli/compare/v2.39.0...v2.39.1) (2026-11-05)
+
+
+### Bug Fixes
+
+* declare missing dependency ([00a2262](https://github.com/wmfs/tymly-cli/commit/00a22621fd71a98eb35506ef858a19146f8fed0d))
+
 # [2.39.0](https://github.com/wmfs/tymly-cli/compare/v2.38.0...v2.39.0) (2026-11-02)
 
 # [2.38.0](https://github.com/wmfs/tymly-cli/compare/v2.37.0...v2.38.0) (2026-08-13)
