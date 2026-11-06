@@ -1,3 +1,5 @@
+# [2.40.0](https://github.com/wmfs/tymly-cli/compare/v2.39.1...v2.40.0) (2026-11-06)
+
 ## [2.39.1](https://github.com/wmfs/tymly-cli/compare/v2.39.0...v2.39.1) (2026-11-05)
 
 
